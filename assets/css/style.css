@@ -80,15 +80,14 @@ section {
 
 .btn-daftar {
     background-color: #F37335;
-    border: 2px solid white;
+    border: 2px solid #FDC830;
     border-radius: 2rem;
 }
 
 .btn-daftar:not(:disabled):not(.disabled):active,
-.btn-daftar:not(:disabled):not(.disabled):visited,
 .btn-daftar:not(:disabled):not(.disabled):focus,
 .btn-daftar:not(:disabled):not(.disabled):hover {
     background-color: #FDC830;
-    border-color: white;
+    border-color: #F37335;
     transition: .3s ease-in-out;
 }
