@@ -1,0 +1,392 @@
+/* Main Styling */
+
+body {
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Comfortaa', cursive;
+}
+
+section {
+    /* margin-top: 2%; */
+    padding: 10% 0;
+    height: auto;
+}
+
+
+/* END Main Styling */
+
+
+/* ================================================================================ */
+
+
+/* Navs, Images, Logo, and others */
+
+.logo-nav {
+    width: 50px;
+    min-height: 50px;
+    background: url('../img/Logo.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background 1.45s ease-in;
+}
+
+.logo-nav-white {
+    background: url('../img/Logo_White.png') no-repeat;
+    width: 50px;
+    min-height: 50px;
+    background-size: cover;
+    background-position: center;
+    transition: background 1.35s ease-in;
+}
+
+nav.scrolled {
+    background: linear-gradient(to right, #7FB3E0, #3575BB);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+    transition: background 1s ease-in;
+}
+
+@media screen and (max-width: 567.8px) {
+    nav {
+        background: linear-gradient(to right, #7FB3E0, #3575BB);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .logo-nav {
+        width: 50px;
+        min-height: 50px;
+        background: url('../img/Logo_White.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.custom-nav {
+    text-transform: capitalize;
+    margin-left: 13px;
+    margin-right: 13px;
+    color: #7FB3E0 !important;
+    margin-top: 10px;
+}
+
+nav.scrolled a.nav-link {
+    color: white !important;
+    transition: color 0.5s ease-in;
+}
+
+.nav-custom-button {
+    background: #3575BB;
+    border-radius: 100px;
+}
+
+nav.scrolled .nav-custom-button {
+    background: #7FB3E0;
+    transition: background 0.55s ease-in;
+}
+
+.nav-custom-button>a {
+    color: white !important;
+}
+
+.garis {
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, #7FB3E0, #3575BB);
+    transition: width 0.5s;
+    margin-top: 10px;
+}
+
+nav.scrolled .garis {
+    background: white;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-link:hover .garis {
+    width: 100%;
+}
+
+#br {
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+
+/* END Navs, Images, Logo, and others */
+
+
+/* ================================================================================ */
+
+
+/* Header Section */
+
+#header {
+    font-family: 'Comfortaa', cursive;
+    background-image: url('../img/Header_Rev1.svg');
+    /* DONE FIX THIS FOR MOBILE RESPONSIVE IMAGE */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 567px) {
+    #header {
+        background-image: url('../img/Header_Mobile.svg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+}
+
+.underline--magical {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.35s ease-in;
+}
+
+.underline--magical:hover {
+    background-size: 100% 88%;
+    color: rgb(255, 255, 255);
+    transition: color 0.25s ease-out;
+}
+
+@media screen and (max-width: 576px) {
+    .responsive-text-display {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* END Header Section */
+
+
+/* About Us Section */
+
+.garis-subheading {
+    width: 10%;
+    height: 5px;
+    background: linear-gradient(to right, #7FB3E0, #3575BB);
+    transition: width 0.5s;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-left: 45%
+}
+
+.btn-about-us {
+    background-color: #3575BB;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.btn-about-us:hover {
+    background-color: white;
+    border: 2px solid #3575BB;
+    border-radius: 100px;
+    color: #3575BB;
+}
+
+
+/* END About Us Section */
+
+
+/* ================================================================================ */
+
+
+/* How It Works Section */
+
+#how-it-works {
+    background-image: url('../img/Cara\ Kerja.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 567px) {
+    #how-it-works {
+        background-image: url('../img/Cara\ Kerja\ Mobile.svg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #how-it-works {
+        background-image: url('../img/Cara\ Kerja\ Mobile\ SM.svg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+}
+
+.garis-subheading-white {
+    width: 10%;
+    height: 5px;
+    background: white;
+    transition: width 0.5s;
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-left: 45%
+}
+
+.cara-kerja-img {
+    height: 125px;
+    width: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.underline--magical.cara-kerja {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    color: white;
+}
+
+.underline--magical.cara-kerja:hover {
+    background-size: 100% 88%;
+    color: rgb(75, 75, 75);
+    transition: color 0.25s ease-out;
+}
+
+
+/* END How It Works Section */
+
+
+/* ================================================================================ */
+
+
+/* Product Section */
+
+.color-dots span {
+    width: 10px;
+    height: 10px;
+}
+
+.card {
+    border: 1px solid #c9d0d878
+}
+
+.btn-custom-produk {
+    background-color: #3575BB;
+    border: transparent;
+    border-radius: 25px;
+}
+
+.btn-custom-produk:hover {
+    background-color: #218838;
+    border: none;
+}
+
+.card-img-top {
+    width: 55%;
+}
+
+.card-highlight {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 4px solid #3575BB;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.black-shade {
+    background: #3575BB;
+    border-radius: 50px;
+}
+
+
+/* END Product Section */
+
+
+/* ================================================================================ */
+
+
+/* Testimoni Section */
+
+.img-carousel-testimoni {
+    width: 128px;
+    height: auto;
+    border-radius: 64px;
+    border: 2px solid white;
+    margin-bottom: 16px;
+}
+
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+@media screen and (max-width: 576px) {
+    .img-carousel-testimoni {
+        width: 64px;
+        height: auto;
+        border-radius: 64px;
+        border: 2px solid white;
+        margin-bottom: 16px;
+    }
+    .responsive-caption {
+        font-size: .75rem;
+    }
+    .responsive-subcaption {
+        font-size: .5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel-item {
+        max-height: 65vh;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .carousel-item {
+        max-height: 60vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .carousel-item {
+        max-height: 50vh;
+    }
+}
+
+
+/* END Testimoni Section */
+
+
+/* ================================================================================ */
+
+
+/* Contact Form Section */
+
+#contact-us {
+    background-image: url('../img/Hubungi\ Kami.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.custom-contact-form {
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .tombol-contact-atas {
+        margin-bottom: .5em;
+    }
+}
+
+
+/* END Contact Form Section */
+
+
+/* ================================================================================ */
+
+
+/* Footer Section */
+
+.footer-custom {
+    background-color: #3575BB;
+}
+
+
+/* END Footer Section */
