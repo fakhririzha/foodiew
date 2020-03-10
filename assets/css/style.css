@@ -13,6 +13,12 @@ body.bg-changing {
     background-repeat: no-repeat;
 }
 
+.bg-dashboard {
+    background: url('/assets/img/Header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -25,9 +31,25 @@ body.bg-changing {
     }
 }
 
+.underline--magical {
+    background-image: linear-gradient(120deg, #C1212D 0%, #C1212D 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 110%;
+    padding: 5px 10px;
+    transition: background-size 0.35s ease-in;
+    border-radius: 25px;
+}
+
+.underline--magical:hover {
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    transition: color 0.25s ease-out;
+}
+
 section {
     /* margin-top: 2%; */
-    padding: 10% 0;
+    padding: 5% 0;
     height: auto;
 }
 
@@ -80,7 +102,7 @@ section {
 
 .btn-daftar {
     background-color: #F37335;
-    border: 2px solid #FDC830;
+    border: 2px solid #fff;
     border-radius: 2rem;
 }
 
@@ -88,6 +110,69 @@ section {
 .btn-daftar:not(:disabled):not(.disabled):focus,
 .btn-daftar:not(:disabled):not(.disabled):hover {
     background-color: #FDC830;
-    border-color: #F37335;
+    border-color: #fff;
     transition: .3s ease-in-out;
+}
+
+
+/* END Login Form Styling */
+
+
+/* ================================================================================ */
+
+
+/* Navbar Dashboard */
+
+.img-circle {
+    width: 28px;
+    border-radius: 14px;
+}
+
+
+/* END Navbar Dashboard */
+
+
+/* ================================================================================ */
+
+
+/* Header Section */
+
+.bg-location {
+    background-color: #C1212D;
+    padding: 5px 10px;
+    background-size: 110% 110%;
+    border-radius: 25px;
+}
+
+.weekly-label {
+    background-color: #F37335;
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+.weekly-label-margin {
+    margin-top: 8px;
+}
+
+.card-cafe {
+    border-radius: 5vw;
+    border: 0px transparent;
+    overflow: hidden;
+    background-color: white;
+    -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.see-more-btn {
+    background-color: #F37335;
+    border-radius: 25px;
+    border-color: transparent;
+}
+
+.see-more-btn:hover,
+.see-more-btn:active {
+    border-color: transparent;
 }
