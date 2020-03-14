@@ -1,8 +1,22 @@
+/* Font Face */
+
+@font-face {
+    font-family: 'Mostica';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Mostica'), url(../webfonts/Mostica/Mostica.woff2) format('woff2');
+}
+
+
+/* END Font Face */
+
+
 /* Main Styling */
 
 body {
     /* font-family: 'Rubik', sans-serif; */
-    font-family: 'Bellota', cursive;
+    font-family: 'Mostica', cursive;
 }
 
 body.bg-changing {
@@ -32,7 +46,7 @@ body.bg-changing {
 }
 
 .underline--magical {
-    background-image: linear-gradient(120deg, #C1212D 0%, #C1212D 100%);
+    background-image: linear-gradient(120deg, #BF3100 0%, #BF3100 100%);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 0 110%;
@@ -138,14 +152,15 @@ section {
 /* Header Section */
 
 .bg-location {
-    background-color: #C1212D;
+    background-color: #BF3100;
     padding: 5px 10px;
     background-size: 110% 110%;
     border-radius: 25px;
+    color: #F4D58D !important;
 }
 
 .weekly-label {
-    background-color: #F37335;
+    background-color: #F4D58D;
     padding: 10px 15px;
     margin-left: 5px;
     border-radius: 25px;
@@ -159,20 +174,31 @@ section {
     border-radius: 5vw;
     border: 0px transparent;
     overflow: hidden;
-    background-color: white;
+    background-color: #001427;
     -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
     margin-left: 10px;
     margin-right: 10px;
+    color: #fff;
 }
 
 .see-more-btn {
-    background-color: #F37335;
+    background-color: #F4D58D;
     border-radius: 25px;
-    border-color: transparent;
+    border: 2px solid #001427;
+    color: #343A40;
 }
 
 .see-more-btn:hover,
 .see-more-btn:active {
     border-color: transparent;
+}
+
+.navbar-dark {
+    background: rgba(0, 0, 0, .4);
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
 }
