@@ -20,7 +20,7 @@ body {
 }
 
 body.bg-changing {
-    background: linear-gradient(-67deg, #FDC830, #F37335);
+    background: linear-gradient(-67deg, #BF3100, #F37335);
     /* background: linear-gradient(-67deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-size: 200% 200%;
     animation: gradient 30s ease infinite;
@@ -77,7 +77,7 @@ section {
 /* Index Page Styling */
 
 .logo-index {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
