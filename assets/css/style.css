@@ -202,3 +202,30 @@ section {
     -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
 }
+
+
+/* END Header Section */
+
+
+/* ================================================================================ */
+
+
+/* Main Section */
+
+.main-content {
+    background: url('../img/Main_Background.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+/* END Main Section */
+
+
+/* ================================================================================ */
+
+
+/* Profile Page */
+
+
+/* END Profile Page */
