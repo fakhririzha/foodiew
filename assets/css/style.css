@@ -228,7 +228,7 @@ section {
 /* Profile Page */
 
 .navbar-dark.profile {
-    background: transparent !important;
+    background: rgba(0, 0, 0, .4) !important;
 }
 
 .bg-profile {
@@ -246,6 +246,35 @@ section {
 
 .text-gold {
     color: #f4d58d;
+}
+
+.text-navy-blue {
+    color: #001427;
+}
+
+.garis {
+    width: 20%;
+    height: 2px;
+    background: #BF3100;
+    margin-top: 5px;
+}
+
+#user-recommendation {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.choice-label {
+    background: #001427;
+    border-radius: 25px;
+    background-size: 50% 50%;
+    margin: .5rem .8rem;
+}
+
+#user-recommendation {
+    background: url('../img/Main_Background.svg');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
 }
 
 
