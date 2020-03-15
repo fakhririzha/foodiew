@@ -28,7 +28,7 @@ body.bg-changing {
 }
 
 .bg-dashboard {
-    background: url('/assets/img/Header.jpg');
+    background: url('../img/Header.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
