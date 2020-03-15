@@ -67,6 +67,22 @@ section {
     height: auto;
 }
 
+.max-z-index {
+    z-index: 999;
+}
+
+.max-z-index-1 {
+    z-index: 998;
+}
+
+.text-brightred {
+    color: #bf3100 !important;
+}
+
+.bottom-nav {
+    background: #001427;
+}
+
 
 /* END Main Styling */
 
@@ -215,7 +231,7 @@ section {
 .main-content {
     background: url('../img/Main_Background.svg');
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 
@@ -245,7 +261,7 @@ section {
 }
 
 .text-gold {
-    color: #f4d58d;
+    color: #f4d58d !important;
 }
 
 .text-navy-blue {
