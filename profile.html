@@ -57,12 +57,12 @@
     </style>
 </head>
 
-<body class="bg-dashboard">
+<body class="bg-profile">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark profile">
 
-        <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;">
-            User <img src="./assets/img/Logo Square.png" alt="" class="img-thumbnail img-circle">
+        <a class="navbar-brand text-white mr-auto font-weight-bolder" style="font-size: .9rem;" href="./dashboard.html">
+            <i class="fas fa-2x fa-arrow-circle-left"></i>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -82,201 +82,60 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-    </nav>
 
-    <section id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <span class="h6 text-white font-weight-bolder bg-location"><i class="fas fa-map-marker-alt"></i> Medan, ID</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./dashboard.html">
+            <img src="./assets/img/Logo_Square.png" alt="" class="img-thumbnail img-logonav-profile">&nbsp;&nbsp;Foodiew
+        </a>
+    </nav>
 
     <main role="main">
 
-        <section id="weekly-trend-cafe" style="margin-top: 15%;">
+        <section id="information-panel">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <p class="text-white drop-shadow">Trending cafe in <span style="color: #F4D58D">Medan</span></p>
+                    <div class="col-3">
+                        <img src="./assets/img/Profile_dummy.svg" class="img-fluid img-profile-photo img-thumbnail">
                     </div>
-                </div>
-                <div class="row weekly-label-margin">
-                    <div class="col">
-                        <div class="text-dark">
-                            <span class="weekly-label">Weekly</span>
+                    <div class="col-6 text-gold px-0">
+                        <span class="h5 d-block" style="font-size: 1rem">Muhammad Adli</span>
+                        <span class="h6" style="font-size: .75rem">@adlilubis</span>
+                        <br>
+                        <br>
+                        <span class="h6 d-block"><i class="fas fa-star"></i> Intermediate Reviewer</span>
+                    </div>
+                    <div class="col-3 text-gold">
+                        <div class="d-flex justify-content-center">
+                            <i class="fas fa-pencil-alt"></i>&nbsp;
+                            <i class="far fa-envelope"></i>
                         </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="" class="btn btn-primary see-more-btn">See More...</a>
+                        <div class="d-flex justify-content-center my-cafe">
+                            <a href="./my-cafe.html" class="text-gold" style="font-size: .75rem">
+                                <i class="fas fa-warehouse"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center my-cafe">
+                            <a href="./my-cafe.html" class="text-gold" style="font-size: .75rem">
+                                My Cafe
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center my-cafe">
+                            <a href="./my-voucher.html" class="text-gold" style="font-size: .75rem">
+                                <i class="fas fa-tags"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center my-cafe">
+                            <a href="./my-voucher.html" class="text-gold" style="font-size: .75rem">
+                                My Voucher
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="weekly-trend-food">
+
+        <section id="user-recommendation" style="background: white;">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p class="text-white"><span class="underline--magical">Trending food in <span style="color: #F4D58D">Medan</span><span></span></p>
-                    </div>
-                </div>
-                <div class="row weekly-label-margin">
-                    <div class="col">
-                        <div class="text-dark">
-                            <span class="weekly-label">Weekly</span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="weekly-trend-drink">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p class="text-white"><span class="underline--magical">Trending drink in <span style="color: #F4D58D">Medan</span><span></span></p>
-                    </div>
-                </div>
-                <div class="row weekly-label-margin">
-                    <div class="col">
-                        <div class="text-dark">
-                            <span class="weekly-label">Weekly</span>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                    <div class="col px-0 card-cafe" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                        <p class="rating mx-2 mb-0 white-text">
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                            <i class="lnr lnr-star text-warning"></i>
-                        </p>
-                        <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col text-center">
-                        <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                    </div>
-                </div>
+                <div class="row"></div>
             </div>
         </section>
 

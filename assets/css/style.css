@@ -227,5 +227,26 @@ section {
 
 /* Profile Page */
 
+.navbar-dark.profile {
+    background: transparent !important;
+}
+
+.bg-profile {
+    background: #BF3100;
+}
+
+.img-profile-photo {
+    border-radius: 10%;
+}
+
+.img-logonav-profile {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.text-gold {
+    color: #f4d58d;
+}
+
 
 /* END Profile Page */
