@@ -8,6 +8,18 @@
     src: local('Mostica'), url(../webfonts/Mostica/Mostica.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: 'Bashirah';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Bashirah'), url(../webfonts/Bashirah.ttf) format('truetype');
+}
+
+.bashirah {
+    font-family: 'Bashirah' !important;
+}
+
 
 /* END Font Face */
 
@@ -334,3 +346,13 @@ section {
 
 
 /* ================================================================================ */
+
+
+/* Cafe Randomizer Icon */
+
+.randomizer {
+    position: absolute;
+    left: 70vw;
+    right: 5vw;
+    top: 15vh;
+}
