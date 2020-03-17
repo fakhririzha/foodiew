@@ -305,3 +305,24 @@ section {
 .img-food-pic {
     width: 25%;
 }
+
+
+/* END Categories Page */
+
+
+/* ================================================================================ */
+
+
+/* Hall of Fame Page */
+
+.label-hof {
+    padding: 5px 10px;
+    background: #bf3100;
+    border-radius: 1rem;
+}
+
+
+/* END Hall of Fame Page */
+
+
+/* ================================================================================ */
