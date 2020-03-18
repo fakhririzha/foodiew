@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fakhri Rizha Ananda" />
+    <meta name="generator" content="Visual Studio Code v.1.42.0" />
+    <title>Foodiew.</title>
+
+    <link rel="canonical" href="https://arahteknologi.com" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Library -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/floating_placeholder.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="assets/css/mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="assets/css/sidebar.css" rel="stylesheet" />
+    <link href="assets/css/sidebar-themes.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/arrow.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" href="./assets/img/favicons/apple-touch-icon.png" sizes="180x180"> -->
+    <!-- <link rel="icon" href="./assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png"> -->
+    <!-- <link rel="icon" href="./assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png"> -->
+    <!-- <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json"> -->
+    <!-- <link rel="mask-icon" href="./assets/img/favicons/safari-pinned-tab.svg" color="#7FB3E0"> -->
+    <!-- <link rel="icon" href="./assets/img/favicons/favicon.ico"> -->
+    <!-- <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml"> -->
+    <meta name="theme-color" content="#7FB3E0" />
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-profile">
+
+    <div class="page-wrapper default-theme border-radius-on">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="#" class="text-gold">Foodiew</a>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="./assets/img/Profile_dummy.svg" alt="User picture">
+                    </div>
+                    <div class="user-info text-gold">
+                        <span class="user-name">Muhammad
+                            <strong>Adli</strong>
+                        </span>
+                        <span class="user-role">Intermediate Reviewer</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                        <span>
+                            <a href="./profile.html" class="text-gold">
+                                <i class="fas fa-wrench"></i>
+                            </a>
+                            <a href="./profile.html" class="text-gold">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-item sidebar-search">
+                    <div>
+                        <div class="input-group text-gold">
+                            <input type="text" class="form-control search-menu text-gold" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text text-gold">
+                                    <i class="fa fa-search text-gold" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="header-menu">
+                            <span class="text-gold">Menu</span>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./dashboard_alt.html">
+                                <i class="fas fa-chart-line text-gold"></i>
+                                <span class="menu-text text-gold">Trending</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./profile.html">
+                                <i class="fas fa-user text-gold"></i>
+                                <span class="menu-text text-gold">Profile</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./promo.html">
+                                <i class="fas fa-tags text-gold"></i>
+                                <span class="menu-text text-gold">Promo</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./halloffame.html">
+                                <i class="fas fa-trophy text-gold"></i>
+                                <span class="menu-text text-gold">Hall of Fame</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div>
+                    <a href="./dashboard_alt.html" class="text-gold">
+                        <i class="fa fa-power-off"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-alt sticky-top">
+
+            <a id="toggle-sidebar" class="navbar-brand text-white mr-auto font-weight-bolder" style="font-size: .9rem;" href="#">
+                <i class="fas fa-bars"></i>
+            </a>
+            <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav">
+            <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
+                <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-bottom bottom-nav">
+            <div class="container">
+                <div class="row text-center" style="margin-left: 11vw;">
+                    <div class="col-3">
+                        <a class="text-gold" href="./dashboard_alt.html" style="cursor: pointer">
+                            <i class="fas fa-chart-line fa-2x"></i>
+                            <br>
+                            <span class="nav-bawah">Trends</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="text-gold" href="./profile.html" style="cursor: pointer">
+                            <i class="fas fa-user fa-2x"></i>
+                            <br>
+                            <span class="nav-bawah">Profil</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="text-gold" href="./promo.html" style="cursor: pointer">
+                            <i class="fas fa-tags fa-2x"></i>
+                            <br>
+                            <span class="nav-bawah">Promo</span>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a class="text-gold" href="./halloffame.html" style="cursor: pointer">
+                            <i class="fas fa-trophy fa-2x"></i>
+                            <br>
+                            <span class="nav-bawah">HoF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="page-content">
+
+            <div class="overlay" id="overlay"></div>
+
+            <section id="information-panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <i class="fas fa-pizza-slice fa-4x text-gold"></i>
+                            <br><br>
+                            <span class="h6 text-white">Categories</span>
+                            <br>
+                            <!-- <img src="./assets/img/Foodiew_samping_gold.png" class="img-fluid" style="width: 40%;"> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="user-recommendation" style="padding-bottom: 5rem;">
+                <div class="container">
+                    <div class="row mb-0">
+                        <div class="col">
+                            <p class="text-navy-blue mb-0 h6 text-center">Find best dishes based on categories</p>
+                        </div>
+                    </div>
+                    <div class="row my-0">
+                        <div class="col d-flex justify-content-center">
+                            <div class="garis"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row mb-0">
+                        <div class="col">
+                            <span class="text-gold mb-0 h5 drop-shadow label-categories">Food</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/bread.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Breads 'n Cereals</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/rice.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Rice 'n other grains</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/noodles.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Pasta 'n Noodles</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/vegefruit.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Vegetable 'n Fruit</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/cheese.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Cheese 'n others</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/meat.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Lean Meat 'n Poultry</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/fish.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Fish</p>
+                        </div>
+                        </a>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/egg.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Egg</p>
+                        </div>
+                        </a>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/porridge.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Porridge</p>
+                        </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="row my-0">
+                        <div class="col d-flex justify-content-center">
+                            <div class="garis"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-0">
+                        <div class="col">
+                            <span class="text-gold mb-0 h5 drop-shadow label-categories">Drink</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/milk.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Milk 'n Yoghurt</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/softdrink.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Soft Drinks variant</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/juice.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Juicy Juice Drinks</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/beer_wine_cinder_spirits.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Beer, wine, cinder, etc</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/tea.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Tea variant drinks</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/coffee.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Coffee variant drinks</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/hot_chocolatte.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Tasty Hot Chocolatte</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <img class="img-fluid" src="./assets/img/logo-icon/water.svg" alt="">
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Spirits, booze, etc</p>
+                            </a>
+                        </div>
+                        <div class="col px-0 card-categories" style="font-size: .8rem">
+                            <a class="text-navy-blue" href="./categories.html">
+                                <i class="fas fa-glass-cheers text-center" style="font-size: 4rem; margin: .75rem; padding-bottom: .5rem"></i>
+                                <p style="background: #001427;" class="px-2 pt-2 mb-0 pb-2 font-weight-bolder text-gold">Other tasty drinks</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/SmoothScroll.min.js"></script>
+    <script src="assets/js/mCustomScrollbar.min.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/custom_underline.js"></script> -->
+</body>
+
+</html>

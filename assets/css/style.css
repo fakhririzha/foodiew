@@ -356,3 +356,36 @@ section {
     right: 5vw;
     top: 15vh;
 }
+
+
+/* END Cafe Randomizer Icon */
+
+
+/* ================================================================================ */
+
+
+/* Card for Categories */
+
+.card-categories {
+    border-radius: 5vw;
+    border: 5px solid #001427;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .4));
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #001427;
+}
+
+.label-categories {
+    padding: 10px 10px;
+    background: #001427;
+    border-radius: 1rem;
+}
+
+
+/* END Card for Categories */
+
+
+/* ================================================================================ */
