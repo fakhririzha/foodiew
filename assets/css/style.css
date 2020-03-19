@@ -22,7 +22,7 @@
 
 .label-sidebar {
     background: #F4D58D;
-    padding: 3px 10px;
+    padding: 4px 10px 1px;
     color: #001427;
     border-radius: 100px;
 }
@@ -192,7 +192,7 @@ section {
 
 .bg-location {
     background-color: #BF3100;
-    padding: 5px 10px;
+    padding: 5px 10px 1px;
     background-size: 110% 110%;
     border-radius: 25px;
     color: #F4D58D !important;
