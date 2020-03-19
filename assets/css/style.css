@@ -434,7 +434,19 @@ section {
         font-size: 2rem !important;
     }
     .info-panel span:nth-child(2) {
-        font-size: 05rem !important;
+        font-size: 1rem !important;
+    }
+    .label-categories {
+        margin-left: 3vw;
+        /* margin-top: 50vh; */
+    }
+    .card-categories {
+        border-radius: 15px;
+        margin: 15px 75px;
+    }
+    .card-categories a:hover,
+    .card-categories a:focus {
+        text-decoration: none;
     }
 }
 
