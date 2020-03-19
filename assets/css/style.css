@@ -20,6 +20,17 @@
     font-family: 'Bashirah' !important;
 }
 
+.label-sidebar {
+    background: #F4D58D;
+    padding: 3px 10px;
+    color: #001427;
+    border-radius: 100px;
+}
+
+.default-theme .sidebar-wrapper .sidebar-footer>div.not-signin {
+    border-right: 2px solid #F4D58D;
+}
+
 
 /* END Font Face */
 
