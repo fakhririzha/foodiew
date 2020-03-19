@@ -181,6 +181,12 @@ section {
     border-radius: 14px;
 }
 
+@media screen and (min-width: 415px) {
+    .bottom-nav {
+        display: none;
+    }
+}
+
 
 /* END Navbar Dashboard */
 
@@ -368,6 +374,10 @@ section {
     top: 15vh;
 }
 
+.randomizer a img {
+    width: 65%;
+}
+
 
 /* END Cafe Randomizer Icon */
 
@@ -400,3 +410,33 @@ section {
 
 
 /* ================================================================================ */
+
+
+/* RESPONSIVE DESKTOP FIX */
+
+@media screen and (min-width: 415px) {
+    .card-cafe {
+        border-radius: 15px;
+    }
+    .randomizer a img {
+        width: 35%;
+    }
+    #badge-label {
+        font-size: 1rem;
+    }
+    /* .img-profile-photo {
+        width: 128px;
+    } */
+    .addon {
+        margin-top: 3rem;
+    }
+    .info-panel span {
+        font-size: 2rem !important;
+    }
+    .info-panel span:nth-child(2) {
+        font-size: 05rem !important;
+    }
+}
+
+
+/* END RESPONSIVE DESKTOP FIX */

@@ -22,6 +22,13 @@ jQuery(function($) {
         $(".bottom-nav").toggleClass("max-z-index-1");
     });
 
+    $("#toggle-sidebar2").click(function() {
+        $(".page-wrapper").toggleClass("toggled");
+        $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index-1");
+        $(".bottom-nav").toggleClass("max-z-index-1");
+    });
+
     //toggle sidebar overlay
     $("#overlay").click(function() {
         $(".page-wrapper").toggleClass("toggled");

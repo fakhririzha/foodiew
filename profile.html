@@ -70,7 +70,7 @@
                     <a href="#">
                         <img src="./assets/img/Foodiew_samping_gold.png" class="img-fluid" style="width: 84px;">
                     </a>
-                    <a class="text-gold" href="#">
+                    <a id="toggle-sidebar2" class="text-gold" href="#">
                         <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
@@ -169,20 +169,6 @@
             <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
                 <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
             </a>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
         </nav>
 
         <nav class="navbar navbar-expand-md navbar-light fixed-bottom bottom-nav">
@@ -226,7 +212,7 @@
             <section id="information-panel">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-3 col-lg-2">
                             <img src="./assets/img/Profile_dummy.svg" class="img-fluid img-profile-photo img-thumbnail">
                             <div id="badge-label" class="text-white d-flex justify-content-between" style="margin-top: .75rem">
                                 <i class="far fa-square"></i>
@@ -234,20 +220,22 @@
                                 <i class="far fa-square"></i>
                             </div>
                         </div>
-                        <div class="col-6 text-gold px-0">
+                        <div class="col-6 col-lg-8 text-gold px-0 info-panel">
                             <span class="h5 d-block mb-0" style="font-size: 1rem">Muhammad Adli</span>
                             <span class="h6" style="font-size: .75rem">@adlilubis</span>
                             <br>
                             <span class="h6 d-block"><i class="fas fa-star"></i> Intermediate Reviewer</span>
                             <br>
-                            <a href="./my-voucher.html" class="text-navy-blue px-2 py-2 drop-shadow" style="font-size: .75rem; background: #f4d58d; border-radius: 1rem; margin-right: 1rem;">
-                                <i class="fas fa-tags"></i> Voucher
-                            </a>
-                            <a href="./my-voucher.html" class="text-navy-blue px-2 py-2 drop-shadow" style="font-size: .75rem; background: #f4d58d; border-radius: 1rem;">
-                                <i class="far fa-thumbs-up"></i> Vote
-                            </a>
+                            <div class="addon">
+                                <a href="./my-voucher.html" class="text-navy-blue px-2 py-2 drop-shadow" style="font-size: .75rem; background: #f4d58d; border-radius: 1rem; margin-right: 1rem;">
+                                    <i class="fas fa-tags"></i> Voucher
+                                </a>
+                                <a href="./my-voucher.html" class="text-navy-blue px-2 py-2 drop-shadow" style="font-size: .75rem; background: #f4d58d; border-radius: 1rem;">
+                                    <i class="far fa-thumbs-up"></i> Vote
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-3 text-gold">
+                        <div class="col-3 col-lg-2 text-gold">
                             <div class="d-flex justify-content-center my-cafe">
                                 <a href="./profile_cafe.html" class="text-gold" style="font-size: 1rem">
                                     <i class="fas fa-warehouse"></i>
