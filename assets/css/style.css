@@ -431,11 +431,14 @@ section {
     .addon {
         margin-top: 3rem;
     }
-    .info-panel span {
-        font-size: 2rem !important;
+    .info-panel span:nth-child(1) {
+        font-size: 1.5rem !important;
     }
     .info-panel span:nth-child(2) {
-        font-size: 1rem !important;
+        font-size: .75rem !important;
+    }
+    .info-panel span:nth-child(3) {
+        font-size: .5rem !important;
     }
     .label-categories {
         margin-left: 3vw;
@@ -448,6 +451,20 @@ section {
     .card-categories a:hover,
     .card-categories a:focus {
         text-decoration: none;
+    }
+    .choice-label {
+        margin: .5rem 7.5rem;
+    }
+    .btn-profile:hover,
+    .btn-profile:active {
+        text-decoration: none;
+        color: #001427;
+    }
+    section {
+        padding: 2% 0;
+    }
+    .dropdown-sort-child {
+        font-size: .85rem;
     }
 }
 
