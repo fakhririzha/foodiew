@@ -340,7 +340,10 @@ section {
 /* Categories Page */
 
 .img-food-pic {
-    width: 25%;
+    width: 15%;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid #f4d58d;
 }
 
 
