@@ -8,9 +8,17 @@ $(window).on("scroll", function() {
     }
 })
 
-// $(window).on('load', function() {
-//     $(window).scrollTop(0);
-// });
+$(window).on('load', () => {
+    if (window.innerWidth > 576) {
+        $(".page-wrapper").toggleClass("toggled");
+        $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index-1");
+        $(".bottom-nav").toggleClass("max-z-index-1");
+        document.getElementById("toggle-sidebar2").style = "display: none";
+        // document.getElementsByClassName("top-logo-nav").style = "display: none";
+        $(".top-logo-nav").hide();
+    }
+});
 
 $('.carousel').carousel({
     interval: 3500

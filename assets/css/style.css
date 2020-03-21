@@ -417,6 +417,7 @@ section {
 @media screen and (min-width: 415px) {
     .card-cafe {
         border-radius: 15px;
+        margin: 15px 40px;
     }
     .randomizer a img {
         width: 35%;
