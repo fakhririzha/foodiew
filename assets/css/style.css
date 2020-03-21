@@ -421,6 +421,8 @@ section {
     }
     .randomizer a img {
         width: 35%;
+        /* left: 0vw; */
+        right: 50vw;
     }
     #badge-label {
         font-size: 1rem;
@@ -461,7 +463,8 @@ section {
         color: #001427;
     }
     section {
-        padding: 2% 0;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
     .dropdown-sort-child {
         font-size: .85rem;
