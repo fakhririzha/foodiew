@@ -447,9 +447,6 @@ section {
     #badge-label {
         font-size: 1rem;
     }
-    /* .img-profile-photo {
-        width: 128px;
-    } */
     .info-panel span:nth-child(1) {
         font-size: 1.5rem !important;
     }
@@ -637,6 +634,9 @@ section {
     .addon {
         margin-top: 1rem;
     }
+    /* .img-profile-photo {
+        width: 84px;
+    } */
     @supports ((position:-webkit-sticky) or (position:sticky)) {
         .dsk-sidebar {
             position: -webkit-sticky;
