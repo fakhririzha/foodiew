@@ -456,10 +456,6 @@ section {
     .info-panel span:nth-child(3) {
         font-size: .5rem !important;
     }
-    .label-categories {
-        margin-left: 3vw;
-        /* margin-top: 50vh; */
-    }
     .card-categories a:hover,
     .card-categories a:focus {
         text-decoration: none;
@@ -626,7 +622,7 @@ section {
     }
     .card-categories {
         border-radius: 15px;
-        margin: 15px 40px;
+        margin: 15px 25px;
     }
     .choice-label {
         margin: .5rem 5rem;
@@ -637,12 +633,19 @@ section {
     /* .img-profile-photo {
         width: 84px;
     } */
+    .label-categories {
+        margin-left: 1rem;
+        /* margin-top: 50vh; */
+    }
+    p.label-hof a:hover {
+        text-decoration: none;
+    }
     @supports ((position:-webkit-sticky) or (position:sticky)) {
         .dsk-sidebar {
             position: -webkit-sticky;
             position: sticky;
             top: 4rem;
-            z-index: 1000;
+            z-index: 1;
             height: calc(100vh - 4rem)
         }
     }
