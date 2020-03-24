@@ -91,7 +91,7 @@ section {
 }
 
 .max-z-index {
-    z-index: 1002;
+    z-index: 999;
 }
 
 .max-z-index-1 {
@@ -600,11 +600,11 @@ section {
         left: 70vw;
         right: 5vw;
         top: 15vh;
-        z-index: 1001;
+        z-index: 998;
     }
     .randomizer a img {
         width: 65%;
-        z-index: 1001;
+        z-index: 998;
     }
     .card-cafe {
         border-radius: 15px;
