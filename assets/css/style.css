@@ -466,10 +466,6 @@ section {
         margin-left: 3vw;
         /* margin-top: 50vh; */
     }
-    .card-categories {
-        border-radius: 15px;
-        margin: 15px 75px;
-    }
     .card-categories a:hover,
     .card-categories a:focus {
         text-decoration: none;
@@ -560,6 +556,11 @@ section {
 }
 
 @media (min-width:768px) {
+    section {
+        /* margin-top: 2%; */
+        padding: 2% 0;
+        height: auto;
+    }
      ::-webkit-scrollbar {
         width: 10px;
     }
@@ -569,11 +570,11 @@ section {
     }
     /* Handle */
      ::-webkit-scrollbar-thumb {
-        background: #BF3100;
+        background: #001427;
     }
     /* Handle on hover */
      ::-webkit-scrollbar-thumb:hover {
-        background: #001427;
+        background: #BF3100;
     }
     .dsk-sidebar {
         border-top: 1px solid #bf3100;
@@ -625,6 +626,16 @@ section {
         margin: 15px 25px;
         color: #f4d58d;
         /* max-height: 75%; */
+    }
+    .label-sidebar {
+        background: #F4D58D;
+        padding: 4px 5px 1px;
+        color: #001427;
+        border-radius: 100px;
+    }
+    .card-categories {
+        border-radius: 15px;
+        margin: 15px 40px;
     }
     @supports ((position:-webkit-sticky) or (position:sticky)) {
         .dsk-sidebar {
