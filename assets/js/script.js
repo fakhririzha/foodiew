@@ -9,14 +9,16 @@ $(window).on("scroll", function() {
 })
 
 $(window).on('load', () => {
+    // if (window.innerWidth > 416) {
     if (window.innerWidth > 576) {
-        $(".page-wrapper").toggleClass("toggled");
-        $(".sidebar-wrapper").toggleClass("max-z-index");
-        $(".navbar-dark").toggleClass("max-z-index-1");
-        $(".bottom-nav").toggleClass("max-z-index-1");
-        document.getElementById("toggle-sidebar2").style = "display: none";
+        // $(".page-wrapper").toggleClass("toggled");
+        // $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index");
+        // $(".bottom-nav").toggleClass("max-z-index-1");
+        // document.getElementById("toggle-sidebar2").style = "display: none";
+        // document.getElementById("toggle-sidebar").style = "opacity: 0";
         // document.getElementsByClassName("top-logo-nav").style = "display: none";
-        $(".top-logo-nav").hide();
+        // $(".top-logo-nav").hide();
     }
 });
 

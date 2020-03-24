@@ -91,7 +91,7 @@ section {
 }
 
 .max-z-index {
-    z-index: 999;
+    z-index: 1002;
 }
 
 .max-z-index-1 {
@@ -129,9 +129,10 @@ section {
 
 /* Login Form Section */
 
-.form-control {
+
+/* .form-control {
     border-radius: 2rem;
-}
+} */
 
 .form-control:focus {
     border-color: #C1212D;
@@ -312,6 +313,13 @@ section {
     margin-top: 5px;
 }
 
+.garis-promoted {
+    width: 50%;
+    height: 2px;
+    background: #BF3100;
+    margin-top: 5px;
+}
+
 #user-recommendation {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -417,15 +425,24 @@ section {
 
 /* RESPONSIVE DESKTOP FIX */
 
+@media screen and (max-width: 414.99px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 415px) {
+    .mobile-only {
+        display: none !important;
+    }
     .card-cafe {
         border-radius: 15px;
-        margin: 15px 40px;
+        margin: 15px 25px;
     }
     .randomizer a img {
-        width: 35%;
+        width: 75%;
         /* left: 0vw; */
-        right: 50vw;
+        right: 25vw;
     }
     #badge-label {
         font-size: 1rem;
@@ -466,13 +483,176 @@ section {
         color: #001427;
     }
     section {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
     .dropdown-sort-child {
         font-size: .85rem;
+    }
+    #weekly-trend-cafe {
+        padding: 1% 0%;
+    }
+    .sidebar-wrapper.no-login {
+        width: 225px;
+        left: -225px;
+    }
+    .desktop-only .page-content {
+        padding-left: 225px !important;
+    }
+    .btn-upper-right-nav {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    .btn-upper-right-nav:hover,
+    .btn-upper-right-nav:active,
+    .btn-upper-right-nav:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+    .show>.btn-secondary.dropdown-toggle.btn-upper-right-nav:hover,
+    .show>.btn-secondary.dropdown-toggle.btn-upper-right-nav:active,
+    .show>.btn-secondary.dropdown-toggle.btn-upper-right-nav:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
     }
 }
 
 
 /* END RESPONSIVE DESKTOP FIX */
+
+
+/* ================================================================================ */
+
+
+/* All-new desktop layout */
+
+.bd-sidenav {
+    display: none;
+}
+
+.dsk-navbar {
+    min-height: 4rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1)
+}
+
+.dsk-sidebar {
+    -ms-flex-order: 0;
+    order: 0;
+    /* border-bottom: 1px solid rgba(0, 0, 0, .1) */
+}
+
+.dsk-content {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.dsk-sidebar-right {
+    -ms-flex-order: 2;
+    order: 2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: .875rem;
+    background-color: #001427;
+    border-top: 1px solid #bf3100;
+}
+
+@media (min-width:768px) {
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #BF3100;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #001427;
+    }
+    .dsk-sidebar {
+        border-top: 1px solid #bf3100;
+        border-right: 1px solid rgba(0, 0, 0, .1)
+    }
+    .dsk-sidebar-right {
+        border-left: 1px solid rgba(0, 0, 0, .1)
+    }
+    .dsk-sidebar-right::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    .dsk-sidebar-right::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    .dsk-sidebar-right::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    /* Handle on hover */
+    .dsk-sidebar-right::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .top-logo-nav {
+        margin-left: 1rem;
+    }
+    .randomizer {
+        position: absolute;
+        left: 70vw;
+        right: 5vw;
+        top: 15vh;
+        z-index: 1001;
+    }
+    .randomizer a img {
+        width: 65%;
+        z-index: 1001;
+    }
+    .card-cafe {
+        border-radius: 15px;
+        margin: 25px 25px;
+    }
+    .card-cafe-sponsored {
+        border-radius: 15px;
+        border: 0px transparent;
+        overflow: hidden;
+        background-color: #bf3100;
+        -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
+        margin: 15px 25px;
+        color: #f4d58d;
+        /* max-height: 75%; */
+    }
+    @supports ((position:-webkit-sticky) or (position:sticky)) {
+        .dsk-sidebar {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 4rem;
+            z-index: 1000;
+            height: calc(100vh - 4rem)
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .dsk-sidebar {
+        -ms-flex: 0 1 320px;
+        flex: 0 1 320px
+    }
+}
+
+@supports ((position:-webkit-sticky) or (position:sticky)) {
+    .dsk-sidebar-right {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 4rem;
+        height: calc(100vh - 4rem);
+        overflow-y: auto
+    }
+}
+
+
+/* END All-new desktop layout */
