@@ -416,6 +416,13 @@ section {
     border-radius: 1rem;
 }
 
+.label-categories-location {
+    padding: 4px 10px;
+    background: #f4d58d;
+    border-radius: 1rem;
+    font-size: .75rem;
+}
+
 
 /* END Card for Categories */
 
@@ -636,6 +643,14 @@ section {
     .label-categories {
         margin-left: 1rem;
         /* margin-top: 50vh; */
+    }
+    .label-categories-location {
+        margin-left: 1rem;
+        /* margin-top: 50vh; */
+    }
+    .label-categories-location:hover {
+        text-decoration: none;
+        color: #001427;
     }
     p.label-hof a:hover {
         text-decoration: none;
