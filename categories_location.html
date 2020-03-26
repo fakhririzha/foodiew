@@ -64,11 +64,17 @@
 
     <header class="navbar navbar-expand-lg navbar-dark navbar-dark-alt dsk-navbar sticky-top desktop-only">
 
-        <a class="navbar-brand text-white mr-auto font-weight-bolder" style="font-size: .9rem;" href="#">
+        <a class="navbar-brand text-white font-weight-bolder" style="font-size: .9rem;" href="#">
             <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav">
         </a>
+        <a class="navbar-brand mr-1" href="#">
+            <img src="./assets/img/app-store.png" alt="" style="width: 6rem;" class="top-logo-nav">
+        </a>
+        <a class="navbar-brand" href="#">
+            <img src="./assets/img/google-play.png" alt="" style="width: 6rem;" class="">
+        </a>
         <!-- <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav"> -->
-        <form class="form-inline my-lg-0">
+        <form class="form-inline my-lg-0 ml-auto">
             <div class="input-group">
                 <input type="text" class="form-control search-menu text-navy-blue" placeholder="Search...">
                 <div class="input-group-append">
@@ -78,6 +84,18 @@
                 </div>
             </div>
         </form>
+        <div class="dropdown dropdown-notif">
+            <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav" type="button" id="notificationMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="fas fa-bell"></i> <span class="badge badge-pill badge-warning">99</span> -->
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationMenu" style="font-size: .85rem;">
+                <!-- <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Notif</a> -->
+                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 1</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 2</a>
+                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 3</a>
+            </div>
+        </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
@@ -560,9 +578,29 @@
                 <i class="fas fa-bars"></i>
             </a>
             <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav">
-            <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
+            <!-- <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
                 <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
-            </a>
+            </a> -->
+            <div class="dropdown dropdown-notif" style="padding-top: .5rem; margin-left: 2.25rem;">
+                <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav btn-transparent" type="button" id="notificationMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <i class="fas fa-bell"></i> <span class="badge badge-pill badge-warning">99</span> -->
+                    <i class="fas fa-bell"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationMenu" style="font-size: .85rem;">
+                    <!-- <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Notif</a> -->
+                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 1</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 2</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav btn-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 0px;padding-right: 0px">
+                    <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="font-size: .85rem;">
+                    <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Logout</a>
+                </div>
+            </div>
         </nav>
 
         <nav class="navbar navbar-expand-sm navbar-light fixed-bottom bottom-nav">

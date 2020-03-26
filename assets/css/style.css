@@ -106,6 +106,16 @@ section {
     background: #001427;
 }
 
+.btn-transparent {
+    background: transparent;
+    border-color: transparent;
+}
+
+.btn-transparent:hover {
+    background: transparent;
+    border-color: transparent;
+}
+
 
 /* END Main Styling */
 
@@ -359,6 +369,11 @@ section {
     text-decoration: none;
 }
 
+.kotak-bawah-tiga {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 /* END Profile Page */
 
@@ -410,6 +425,10 @@ section {
     .randomizer a img {
         width: 65%;
     }
+}
+
+.dropdown-notif .dropdown-toggle::after {
+    display: none;
 }
 
 
@@ -484,7 +503,7 @@ section {
         font-size: .75rem !important;
     }
     .info-panel span:nth-child(3) {
-        font-size: .5rem !important;
+        font-size: .1rem !important;
     }
     .card-categories a:hover,
     .card-categories a:focus {
@@ -657,8 +676,12 @@ section {
     .card-cafe-sponsored i {
         font-size: .7rem;
     }
-    .dsk-sidebar-right h6:not(.text-gold) {
-        /* margin-left: 3.5rem; */
+    .sidebar-wrapper .sidebar-header .user-pic {
+        width: 64px;
+        height: 64px;
+    }
+    .border-radius-on .sidebar-header .user-pic img {
+        border-radius: 8px;
     }
     .label-sidebar {
         background: #F4D58D;
