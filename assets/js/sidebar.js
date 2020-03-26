@@ -73,7 +73,8 @@ jQuery(function($) {
         $(".sidebar-content").mCustomScrollbar({
             axis: "y",
             autoHideScrollbar: true,
-            scrollInertia: 300
+            scrollInertia: 300,
+            // setLeft: "-100px"
         });
         $(".sidebar-content").addClass("desktop");
 
