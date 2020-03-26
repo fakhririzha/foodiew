@@ -355,6 +355,10 @@ section {
     background-repeat: repeat-y;
 }
 
+.my-cafe a:hover {
+    text-decoration: none;
+}
+
 
 /* END Profile Page */
 
@@ -395,15 +399,17 @@ section {
 
 /* Cafe Randomizer Icon */
 
-.randomizer {
-    position: absolute;
-    left: 70vw;
-    right: 5vw;
-    top: 15vh;
-}
-
-.randomizer a img {
-    width: 65%;
+@media screen and (max-width: 413px) {
+    .randomizer {
+        position: absolute;
+        left: 70vw;
+        right: 5vw;
+        top: 15vh;
+        z-index: 2000;
+    }
+    .randomizer a img {
+        width: 65%;
+    }
 }
 
 
@@ -616,13 +622,13 @@ section {
     }
     .randomizer {
         position: absolute;
-        left: 70vw;
-        right: 5vw;
-        top: 15vh;
+        /* left: 70vw; */
+        /* right: 5vw; */
+        top: -5vh;
         z-index: 998;
     }
     .randomizer a img {
-        width: 65%;
+        width: 25%;
         z-index: 998;
     }
     .card-cafe {
