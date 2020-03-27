@@ -789,7 +789,42 @@ section {
     }
 }
 
-@media screen and (min-width: 1367px) {
+@media screen and (min-width: 1367px) and (max-width: 1440px) {
+    .garis-promoted {
+        width: 50%;
+        height: 2px;
+        background: #BF3100;
+        margin-top: 5px;
+        margin-left: 3.45rem;
+    }
+    .card-cafe-sponsored {
+        border-radius: 15px;
+        border: 0px transparent;
+        overflow: hidden;
+        background-color: #bf3100;
+        -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
+        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .8));
+        margin: 0px 7rem 0rem;
+        color: #f4d58d;
+        height: 140px;
+        width: 140px;
+        font-size: .7rem;
+    }
+    .card-cafe-sponsored span,
+    .card-cafe-sponsored p,
+    .card-cafe-sponsored i {
+        font-size: .7rem;
+    }
+    .dsk-sidebar-right .row {
+        margin-left: -5rem !important;
+        margin-right: -5rem !important;
+    }
+    .dsk-sidebar-right .row i {
+        padding-bottom: 5rem !important;
+    }
+}
+
+@media screen and (min-width: 1441px) {
     .garis-promoted {
         width: 50%;
         height: 2px;
