@@ -578,6 +578,12 @@ section {
     /* border-top: 1px solid #bf3100; */
 }
 
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    #badge-label {
+        margin-top: -0.5rem !important;
+    }
+}
+
 @media screen and (min-width: 376px) and (max-width: 767px) {
     .mobile-only .dropdown-notif {
         margin-left: 3rem !important;
@@ -586,8 +592,8 @@ section {
         margin-left: 1px;
         margin-right: 1px;
     }
-    .badge-label {
-        margin-top: -0.5rem;
+    #badge-label {
+        margin-top: -0.35rem !important;
     }
 }
 
