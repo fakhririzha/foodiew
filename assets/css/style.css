@@ -369,11 +369,6 @@ section {
     text-decoration: none;
 }
 
-.kotak-bawah-tiga {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 
 /* END Profile Page */
 
@@ -591,7 +586,24 @@ section {
     /* border-top: 1px solid #bf3100; */
 }
 
-@media (min-width:768px) {
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .mobile-only .dropdown-notif {
+        margin-left: 3rem !important;
+    }
+    .kotak-bawah-tiga {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+    .kotak-bawah-tiga {
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+@media screen and (min-width:768px) {
     section {
         /* margin-top: 2%; */
         padding: 2% 0;
@@ -641,13 +653,13 @@ section {
     }
     .randomizer {
         position: absolute;
-        /* left: 70vw; */
+        left: 10vw;
         /* right: 5vw; */
         top: -5vh;
         z-index: 998;
     }
     .randomizer a img {
-        width: 25%;
+        width: 30%;
         z-index: 998;
     }
     .card-cafe {
@@ -746,6 +758,16 @@ section {
         left: inherit;
     }
     .social-media a {
+        margin-right: 10px;
+    }
+    .nav-link-gold {
+        color: #c2a052 !important;
+    }
+    .nav-link-gold:hover {
+        color: #f4d58d !important;
+    }
+    .kotak-bawah-tiga {
+        margin-left: 10px;
         margin-right: 10px;
     }
     @supports ((position:-webkit-sticky) or (position:sticky)) {
