@@ -339,14 +339,6 @@ section {
     margin-top: 5px;
 }
 
-.garis-promoted {
-    width: 50%;
-    height: 2px;
-    background: #BF3100;
-    margin-top: 5px;
-    margin-left: 3.1rem;
-}
-
 #user-recommendation {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -670,6 +662,13 @@ section {
         border-radius: 15px;
         margin: 25px 25px;
     }
+    .garis-promoted {
+        width: 50%;
+        height: 2px;
+        background: #BF3100;
+        margin-top: 5px;
+        margin-left: 4.5rem;
+    }
     .card-cafe-sponsored {
         border-radius: 15px;
         border: 0px transparent;
@@ -780,6 +779,8 @@ section {
         }
     }
 }
+
+@media screend and(min-width: 1440px) {}
 
 @media (min-width:1200px) {
     .dsk-sidebar {
