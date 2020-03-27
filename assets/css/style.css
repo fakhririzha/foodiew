@@ -107,13 +107,17 @@ section {
 }
 
 .btn-transparent {
-    background: transparent;
-    border-color: transparent;
+    background: transparent !important;
+    border-color: transparent !important;
 }
 
-.btn-transparent:hover {
-    background: transparent;
-    border-color: transparent;
+.btn-transparent:hover,
+.btn-transparent:active,
+.btn-transparent:focus {
+    background: transparent !important;
+    border-color: transparent !important;
+    border: 0px solid transparent !important;
+    box-shadow: none !important;
 }
 
 

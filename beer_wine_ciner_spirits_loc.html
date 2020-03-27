@@ -26,7 +26,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
-    <link href="assets/css/mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="assets/css/sidebar.css" rel="stylesheet" />
     <link href="assets/css/sidebar-themes.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -61,19 +61,14 @@
 </head>
 
 <body class="bg-profile">
+
     <header class="navbar navbar-expand-lg navbar-dark navbar-dark-alt dsk-navbar sticky-top desktop-only">
 
-        <a class="navbar-brand text-white font-weight-bolder" style="font-size: .9rem;" href="#">
+        <a class="navbar-brand text-white mr-auto font-weight-bolder" style="font-size: .9rem;" href="#">
             <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav">
         </a>
-        <a class="navbar-brand mr-1" href="#">
-            <img src="./assets/img/app-store.png" alt="" style="width: 6rem;" class="top-logo-nav">
-        </a>
-        <a class="navbar-brand" href="#">
-            <img src="./assets/img/google-play.png" alt="" style="width: 6rem;" class="">
-        </a>
         <!-- <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav"> -->
-        <form class="form-inline my-lg-0 ml-auto">
+        <form class="form-inline my-lg-0">
             <div class="input-group">
                 <input type="text" class="form-control search-menu text-navy-blue" placeholder="Search...">
                 <div class="input-group-append">
@@ -83,18 +78,6 @@
                 </div>
             </div>
         </form>
-        <div class="dropdown dropdown-notif">
-            <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav" type="button" id="notificationMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <!-- <i class="fas fa-bell"></i> <span class="badge badge-pill badge-warning">99</span> -->
-                <i class="fas fa-bell"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationMenu" style="font-size: .85rem;">
-                <!-- <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Notif</a> -->
-                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 1</a>
-                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 2</a>
-                <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 3</a>
-            </div>
-        </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
@@ -116,7 +99,7 @@
                         </div>
                         <div class="user-info text-gold">
                             <span class="user-name"><strong>Adli</strong></span>
-                            <span class="user-role"><i class="fas fa-star"></i> Intermediate</span>
+                            <span class="user-role">Intermediate</span>
                             <span class="user-role">Reviewer</span>
                             <span class="user-status">
                                 <i class="fa fa-circle"></i>
@@ -149,6 +132,20 @@
                                     <i class="fas fa-user text-gold"></i>
                                     <span class="menu-text text-gold">Profile</span>
                                 </a>
+                                <!-- <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="./profile.html" class="text-gold">
+                                                <i class="fas fa-eye text-gold"></i> View Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./message.html" class="text-gold">
+                                                <i class="fas fa-envelope text-gold"></i> Message
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
                             </li>
                             <li class="sidebar-dropdown">
                                 <a href="./promo.html">
@@ -168,53 +165,19 @@
                                     <span class="menu-text text-gold">Contact Us</span>
                                 </a>
                             </li>
-                            <li class="sidebar-dropdown">
-                                <a href="./contact-us.html">
-                                    <i class="fas fa-2x fa-shield-alt text-gold"></i>
-                                    <span class="menu-text text-gold">Privacy Policy</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-dropdown">
-                                <a href="./contact-us.html">
-                                    <i class="fas fa-2x fa-book text-gold"></i>
-                                    <span class="menu-text text-gold">T & C</span>
-                                </a>
-                            </li>
-                            <li class="header-menu">
-                                <span class="text-gold">Follow Us!</span>
-                            </li>
-                            <div class="social-media">
-                                <a href="#" style="margin-left: 1.25rem;">
-                                    <i class="fab fa-2x fa-facebook-square text-gold"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-2x fa-instagram text-gold"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-2x fa-youtube-square text-gold"></i>
-                                </a>
-                            </div>
                         </ul>
                     </div>
                     <!-- sidebar-menu  -->
                 </div>
-                <!-- sidebar-footer  -->
-                <div class="sidebar-footer">
-                    <div>
-                        <a href="javascript:void(0)" class="text-gold">
-                            &copy;2020, Foodiew.
-                        </a>
-                    </div>
-                </div>
             </div>
 
-            <nav class="d-none d-xl-block col-xl-2 dsk-sidebar-right text-white text-center">
-                <h6 class="text-gold">Sponsored</h6>
+            <nav class="d-none d-xl-block col-xl-2 dsk-sidebar-right text-white">
+                <h5 class="text-gold">Sponsored</h5>
                 <div class="garis-promoted"></div>
                 <br>
                 <h6>Cafe</h6>
                 <div class="row">
-                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
                         <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
                         <p class="mx-2 mt-2 pb-2 font-weight-bolder">Dopamine Cafe</p>
                     </div>
@@ -222,18 +185,18 @@
                 <br>
                 <h6>Food</h6>
                 <div class="row">
-                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
                         <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
                         <p class="mx-2 mt-2 mb-0 font-weight-bolder">Food</p>
                         <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                     </div>
                 </div>
                 <br>
-                <h6>Beverages</h6>
+                <h6>Drink</h6>
                 <div class="row">
-                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
                         <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Beverages</p>
+                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Drink</p>
                         <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                     </div>
                 </div>
@@ -245,13 +208,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center">
-                                <i class="fas fa-trophy fa-4x text-gold"></i>
-                                <br><br>
-                                <span class="h6 text-white">All-time favourites</span>
+                                <img src="./assets/img/logo-icon/beer_wine_cinder_spirits.svg" class="img-fluid img-food-pic drop-shadow">
                                 <br>
-                                <span class="h6 text-white">Hall of Fame</span>
                                 <br>
-                                <!-- <img src="./assets/img/Foodiew_samping_gold.png" class="img-fluid" style="width: 40%;"> -->
+                                <span class="h5 text-gold">Beer, wine, cinder, and spirits</span>
                             </div>
                         </div>
                     </div>
@@ -259,87 +219,22 @@
 
                 <section id="user-recommendation" style="padding-bottom: 5rem;">
                     <div class="container">
+                        <div class="row mb-0">
+                            <div class="col">
+                                <p class="text-center text-navy-blue mb-0">Top-rated Beer, wine, cinder, and spirits list!</p>
+                            </div>
+                        </div>
                         <div class="row my-0">
                             <div class="col d-flex justify-content-center">
                                 <div class="garis"></div>
                             </div>
                         </div>
                         <br>
-                        <div class="row">
-                            <div class="col d-flex justify-content-between">
-                                <p class="text-gold label-hof">
-                                    <i class="fas fa-map-marker-alt"></i> Medan
-                                </p>
-                                <p class="label-hof">
-                                    <a href="./categories_list.html" class="text-gold">Categories</a>
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row mb-0">
-                            <div class="col">
-                                <p class="text-navy-blue mb-0 h4">Cafe</p>
-                            </div>
-                        </div>
                         <div class="row text-center">
                             <div class="col choice-label" style="color: gold">1st</div>
                             <div class="col choice-label" style="color: silver">2nd</div>
                             <div class="col choice-label" style="color: #cd7f32">3rd</div>
-                        </div>
-                        <div class="row">
-                            <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            </div>
-                            <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            </div>
-                            <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row mb-0">
-                            <div class="col">
-                                <p class="text-navy-blue mb-0 h4">Food</p>
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col choice-label" style="color: gold">1st</div>
-                            <div class="col choice-label" style="color: silver">2nd</div>
-                            <div class="col choice-label" style="color: #cd7f32">3rd</div>
+                            <div class="col choice-label" style="color: #fff">4th</div>
                         </div>
                         <div class="row">
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
@@ -381,25 +276,40 @@
                                 <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
                                 <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                             </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col text-center">
-                                <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row mb-0">
-                            <div class="col">
-                                <p class="text-navy-blue mb-0 h4">Beverages</p>
+                            <div class="col px-0 card-cafe" style="font-size: .8rem">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                             </div>
                         </div>
                         <div class="row text-center">
-                            <div class="col choice-label" style="color: gold">1st</div>
-                            <div class="col choice-label" style="color: silver">2nd</div>
-                            <div class="col choice-label" style="color: #cd7f32">3rd</div>
+                            <div class="col choice-label" style="color: white">5th</div>
+                            <div class="col choice-label" style="color: white">6th</div>
+                            <div class="col choice-label" style="color: white">7th</div>
+                            <div class="col choice-label" style="color: white">8th</div>
                         </div>
                         <div class="row">
+                            <div class="col px-0 card-cafe" style="font-size: .8rem">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
                                 <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
                                 <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
@@ -446,7 +356,6 @@
                                 <a href="" class="btn btn-primary see-more-btn">See More...</a>
                             </div>
                         </div>
-                        <br>
                     </div>
                 </section>
 
@@ -471,19 +380,20 @@
                         <img class="img-responsive img-rounded" src="./assets/img/Profile_dummy.svg" alt="User picture">
                     </div>
                     <div class="user-info text-gold">
-                        <span class="user-name">Muhammad <strong>Adli</strong>
+                        <span class="user-name">Muhammad
+                            <strong>Adli</strong>
                         </span>
-                        <span class="user-role"><i class="fas fa-star"></i> Intermediate Reviewer</span>
+                        <span class="user-role">Intermediate Reviewer</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
                         </span>
                         <span class="mt-2">
                             <a href="./profile.html" class="label-sidebar mr-1">
-                                <i class="fas fa-cog text-navy-blue"></i>
+                                <i class="fas fa-wrench text-navy-blue"></i>
                             </a>
                             <a href="./profile.html" class="label-sidebar">
-                                <i class="fas fa-envelope text-navy-blue"></i>
+                                <i class="far fa-envelope text-navy-blue"></i>
                             </a>
                         </span>
                     </div>
@@ -495,8 +405,8 @@
                             <input type="text" class="form-control search-menu text-gold" placeholder="Search...">
                             <div class="input-group-append">
                                 <span class="input-group-text text-gold">
-                                <i class="fa fa-search text-gold" aria-hidden="true"></i>
-                            </span>
+                                    <i class="fa fa-search text-gold" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -537,18 +447,6 @@
                                 <span class="menu-text text-gold">Contact Us</span>
                             </a>
                         </li>
-                        <li class="sidebar-dropdown">
-                            <a href="./contact-us.html">
-                                <i class="fas fa-2x fa-shield-alt text-gold"></i>
-                                <span class="menu-text text-gold">Privacy Policy</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="./contact-us.html">
-                                <i class="fas fa-2x fa-book text-gold"></i>
-                                <span class="menu-text text-gold">T & C</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
@@ -569,29 +467,9 @@
                 <i class="fas fa-bars"></i>
             </a>
             <img src="./assets/img/Foodiew_samping_gold.png" alt="" style="width: 6rem;" class="top-logo-nav">
-            <!-- <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
+            <a class="navbar-brand text-white ml-auto font-weight-bolder" style="font-size: .9rem;" href="./profile.html">
                 <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
-            </a> -->
-            <div class="dropdown dropdown-notif" style="padding-top: .5rem; margin-left: 2.25rem;">
-                <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav btn-transparent" type="button" id="notificationMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <!-- <i class="fas fa-bell"></i> <span class="badge badge-pill badge-warning">99</span> -->
-                    <i class="fas fa-bell"></i>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationMenu" style="font-size: .85rem;">
-                    <!-- <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Notif</a> -->
-                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 1</a>
-                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 2</a>
-                    <a href="#" class="dropdown-item"><i class="fas fa-bell"></i> Notification 3</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle btn-upper-right-nav btn-transparent" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left: 0px;padding-right: 0px">
-                    <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="font-size: .85rem;">
-                    <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Logout</a>
-                </div>
-            </div>
+            </a>
         </nav>
 
         <nav class="navbar navbar-expand-md navbar-light fixed-bottom bottom-nav">
@@ -637,13 +515,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-center">
-                            <i class="fas fa-trophy fa-4x text-gold"></i>
-                            <br><br>
-                            <span class="h6 text-white">All-time favourites</span>
+                            <img src="./assets/img/logo-icon/beer_wine_cinder_spirits.svg" class="img-fluid img-food-pic drop-shadow">
                             <br>
-                            <span class="h6 text-white">Hall of Fame</span>
                             <br>
-                            <!-- <img src="./assets/img/Foodiew_samping_gold.png" class="img-fluid" style="width: 40%;"> -->
+                            <span class="h5 text-gold">Beer, wine, cinder, and spirits</span>
                         </div>
                     </div>
                 </div>
@@ -651,83 +526,17 @@
 
             <section id="user-recommendation" style="padding-bottom: 5rem;">
                 <div class="container">
+                    <div class="row mb-0">
+                        <div class="col">
+                            <p class="text-center text-navy-blue mb-0">Top-rated Beer, wine, cinder, and spirits list!</p>
+                        </div>
+                    </div>
                     <div class="row my-0">
                         <div class="col d-flex justify-content-center">
                             <div class="garis"></div>
                         </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col d-flex justify-content-between">
-                            <p class="text-gold label-hof">
-                                <i class="fas fa-map-marker-alt"></i> Medan
-                            </p>
-                            <p class="label-hof">
-                                <a href="./categories_list.html" class="text-gold">Categories</a>
-                            </p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row mb-0">
-                        <div class="col">
-                            <p class="text-navy-blue mb-0 h4">Cafe</p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col choice-label" style="color: gold">1st</div>
-                        <div class="col choice-label" style="color: silver">2nd</div>
-                        <div class="col choice-label" style="color: #cd7f32">3rd</div>
-                    </div>
-                    <div class="row">
-                        <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                        </div>
-                        <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                        </div>
-                        <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col text-center">
-                            <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row mb-0">
-                        <div class="col">
-                            <p class="text-navy-blue mb-0 h4">Food</p>
-                        </div>
-                    </div>
                     <div class="row text-center">
                         <div class="col choice-label" style="color: gold">1st</div>
                         <div class="col choice-label" style="color: silver">2nd</div>
@@ -774,22 +583,56 @@
                             <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col text-center">
-                            <a href="" class="btn btn-primary see-more-btn">See More...</a>
-                        </div>
+                    <div class="row text-center">
+                        <div class="col choice-label" style="color: white">4th</div>
+                        <div class="col choice-label" style="color: white">5th</div>
+                        <div class="col choice-label" style="color: white">6th</div>
                     </div>
-                    <br>
-                    <div class="row mb-0">
-                        <div class="col">
-                            <p class="text-navy-blue mb-0 h4">Beverages</p>
+                    <div class="row">
+                        <div class="col px-0 card-cafe" style="font-size: .8rem">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                            <p class="rating mx-2 mb-0 white-text">
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                            </p>
+                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                        </div>
+                        <div class="col px-0 card-cafe" style="font-size: .8rem">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                            <p class="rating mx-2 mb-0 white-text">
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                            </p>
+                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                        </div>
+                        <div class="col px-0 card-cafe" style="font-size: .8rem">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                            <p class="rating mx-2 mb-0 white-text">
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                                <i class="lnr lnr-star text-warning"></i>
+                            </p>
+                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
                         </div>
                     </div>
                     <div class="row text-center">
-                        <div class="col choice-label" style="color: gold">1st</div>
-                        <div class="col choice-label" style="color: silver">2nd</div>
-                        <div class="col choice-label" style="color: #cd7f32">3rd</div>
+                        <div class="col choice-label" style="color: white">7th</div>
+                        <div class="col choice-label" style="color: white">8th</div>
+                        <div class="col choice-label" style="color: white">9th</div>
                     </div>
                     <div class="row">
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
@@ -838,7 +681,6 @@
                             <a href="" class="btn btn-primary see-more-btn">See More...</a>
                         </div>
                     </div>
-                    <br>
                 </div>
             </section>
 
@@ -848,7 +690,7 @@
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/SmoothScroll.min.js"></script>
-    <script src="assets/js/mCustomScrollbar.min.js"></script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- <script src="assets/js/custom_underline.js"></script> -->
