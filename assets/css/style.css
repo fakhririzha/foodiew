@@ -586,6 +586,9 @@ section {
         margin-left: 1px;
         margin-right: 1px;
     }
+    .badge-label {
+        margin-top: -0.5rem;
+    }
 }
 
 @media screen and (min-width: 360px) and (max-width: 375px) {
