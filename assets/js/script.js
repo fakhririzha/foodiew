@@ -26,6 +26,14 @@ $(window).on('load', () => {
         $(window).click(function() {
             $('#randomizer').popover('hide');
         })
+    } else {
+        $('#randomizer2').popover({
+            trigger: 'manual'
+        });
+        $('#randomizer2').popover('show');
+        $(window).click(function() {
+            $('#randomizer2').popover('hide');
+        })
     }
 });
 

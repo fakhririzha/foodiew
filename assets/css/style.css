@@ -408,10 +408,10 @@ section {
 @media screen and (max-width: 413px) {
     .randomizer {
         position: absolute;
-        left: 70vw;
+        /* left: 70vw; */
         right: 5vw;
-        top: 15vh;
-        z-index: 995;
+        top: -5vh;
+        z-index: 998;
     }
     .randomizer a img {
         width: 65%;
@@ -626,6 +626,30 @@ section {
         border-radius: .5rem;
         background: #f4d58d;
         color: #001427;
+    }
+    .popover {
+        border-radius: 50px;
+        background-color: #bf3100;
+        z-index: 995;
+    }
+    .popover-body {
+        margin-left: .3rem;
+        font-family: 'Mostica';
+        text-align: center;
+        color: #f4d58d !important;
+        z-index: 995;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::after {
+        right: 2px;
+        border-left-color: #bf3100;
+        z-index: 995;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::before {
+        right: 2px;
+        border-left-color: #bf3100;
+        z-index: 995;
     }
 }
 
