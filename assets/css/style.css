@@ -411,7 +411,7 @@ section {
         /* left: 70vw; */
         right: 5vw;
         top: -5vh;
-        z-index: 998;
+        z-index: 995;
     }
     .randomizer a img {
         width: 65%;
@@ -721,11 +721,11 @@ section {
         left: 10vw;
         /* right: 5vw; */
         top: -5vh;
-        z-index: 998;
+        z-index: 995;
     }
     .randomizer a img {
         width: 30%;
-        z-index: 998;
+        z-index: 995;
     }
     .card-cafe {
         border-radius: 15px;
