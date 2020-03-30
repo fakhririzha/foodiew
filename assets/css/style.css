@@ -628,15 +628,22 @@ section {
         color: #001427;
     }
     .popover {
-        border-radius: 50px;
+        border-radius: 5px;
         background-color: #bf3100;
+        top: -25px !important;
+        /* left: 120px !important; */
         z-index: 995;
+    }
+    .popover .arrow {
+        top: 15px !important;
     }
     .popover-body {
         margin-left: .3rem;
         font-family: 'Mostica';
         text-align: center;
         color: #f4d58d !important;
+        width: 7rem;
+        font-size: .65rem;
         z-index: 995;
     }
     .bs-popover-auto[x-placement^=left]>.arrow::after,
