@@ -19,8 +19,19 @@ $(window).on('load', () => {
         // document.getElementById("toggle-sidebar").style = "opacity: 0";
         // document.getElementsByClassName("top-logo-nav").style = "display: none";
         // $(".top-logo-nav").hide();
+        $('#randomizer').popover({
+            trigger: 'manual'
+        });
+        $('#randomizer').popover('show');
+        $(window).click(function() {
+            $('#randomizer').popover('hide');
+        })
     }
 });
+
+$('button[data-target|="#writeReviewMobile"').on('click', () => {
+    $('#reviewMobile').modal('hide');
+})
 
 $('.carousel').carousel({
     interval: 3500

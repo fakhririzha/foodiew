@@ -253,7 +253,7 @@
                                     <i class="far fa-square kotak-bawah-tiga"></i>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-8 text-gold px-0 info-panel">
+                            <div class="col-6 col-lg-4 text-gold px-0 info-panel">
                                 <span class="h5 d-block" style="font-size: 1rem">McDonald Ringroad</span>
                                 <span class="h6" style="font-size: .75rem"><i class="fas fa-map-marker-alt"></i> Focal Point Medan</span>
                                 <br>
@@ -270,9 +270,56 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-3 col-lg-2 text-gold">
-                                <div class="d-flex justify-content-center">
-                                    <i class="far fa-2x fa-envelope"></i>
+                            <div class="col-3 col-lg-6 text-gold">
+                                <div class="review-header d-flex justify-content-between mb-2" style="font-size: 1rem;">
+                                    <span class="pt-1">Review <small>(scroll down to see more)</small></span>
+                                    <!-- <span><i class="far fa-edit"></i> Write your review</span> -->
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-review text-gold" data-toggle="modal" data-target="#staticBackdrop"><i class="far fa-edit"></i> Write your review</button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-navy-blue" id="staticBackdropLabel">McDonalds Cafe</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="POST">
+                                                        <div class="form-group text-navy-blue">
+                                                            <label for="exampleFormControlTextarea1">Add your review</label>
+                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <!-- <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button> -->
+                                                    <button type="button" class="btn btn-review text-gold">Posting Review</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-box">
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -726,7 +773,7 @@
                                 <i class="far fa-square kotak-bawah-tiga"></i>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-8 text-gold px-0 info-panel">
+                        <div class="col-9 col-lg-10 text-gold px-0 info-panel">
                             <span class="h5 d-block" style="font-size: 1rem">McDonald Ringroad</span>
                             <span class="h6" style="font-size: .75rem"><i class="fas fa-map-marker-alt"></i> Focal Point Medan</span>
                             <br>
@@ -737,12 +784,120 @@
                                 <i class="lnr lnr-star text-warning"></i>
                                 <i class="lnr lnr-star text-warning"></i> (73)
                             </p>
+                            <!-- <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#reviewMobile"><i class="far fa-edit"></i> Write your review</button> -->
+                            <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#reviewMobile"><i class="fas fa-comments"></i> See Review</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="reviewMobile" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="reviewMobileLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-navy-blue" id="reviewMobileLabel">McDonalds Cafe</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- <form action="POST">
+                                                <div class="form-group text-navy-blue">
+                                                    <label for="exampleFormControlTextarea1">Add your review</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </form> -->
+                                            <div class="mobile-review-section-header d-flex justify-content-between mb-2">
+                                                <p class="text-navy-blue mt-2"><small>(Scroll to see more)</small></p>
+                                                <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#writeReviewMobile"><i class="fas fa-edit"></i> Write your review!</button>
+                                                </button>
+                                            </div>
+                                            <div class="review-box">
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                                <div class="review-single">
+                                                    <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                                    <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button>
+                                            <!-- <button type="button" class="btn btn-review text-gold">Posting Review</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="writeReviewMobile" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="writeReviewMobileLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-navy-blue" id="writeReviewMobileLabel">McDonalds Cafe</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="POST">
+                                                <div class="form-group text-navy-blue">
+                                                    <label for="exampleFormControlTextarea1">Add your review</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <!-- <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button> -->
+                                            <button type="button" class="btn btn-review text-gold">Posting Review</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-3 col-lg-2 text-gold">
+                        <!-- <div class="col-3 col-lg-2 text-gold">
                             <div class="d-flex justify-content-center">
                                 <i class="far fa-2x fa-envelope"></i>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </section>

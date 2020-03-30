@@ -582,9 +582,56 @@ section {
     /* border-top: 1px solid #bf3100; */
 }
 
+.btn-review {
+    background: #751d00;
+    border: 2px solid #F4D58D;
+    border-radius: 2.5rem;
+    font-size: .75rem;
+    padding: .25rem .9rem;
+}
+
+.btn-review:hover,
+.btn-review:active,
+.btn-review:focus {
+    background: #e03800 !important;
+    border: 2px solid #F4D58D !important;
+    border-radius: 2.5rem;
+    font-size: .75rem;
+    /* box-shadow: 0 0 0 0.2rem rgba(244, 213, 141, 0.5) !important; */
+    box-shadow: none !important;
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px) {
+    .review-box {
+        width: 100%;
+        background-color: rgb(138, 34, 0);
+        border-radius: 1rem;
+        height: 12rem;
+        overflow-y: scroll;
+        /* border: .35rem solid rgb(138, 34, 0); */
+    }
+    .review-box .review-single {
+        padding-left: 1rem;
+    }
+    .review-single p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .review-single p:nth-child(2) {
+        font-size: .75rem;
+    }
+    .review-single {
+        padding: .25rem .25rem;
+        margin: .5rem;
+        border-radius: .5rem;
+        background: #f4d58d;
+        color: #001427;
+    }
+}
+
 @media screen and (min-width: 360px) and (max-width: 375px) {
     #badge-label {
-        margin-top: -0.5rem !important;
+        margin-top: 0.5rem !important;
     }
 }
 
@@ -634,24 +681,6 @@ section {
         padding-left: 0px;
         padding-right: 0px;
         border-right: 1px solid rgba(0, 0, 0, .1)
-    }
-    .dsk-sidebar-right {
-        border-left: 1px solid rgba(0, 0, 0, .1)
-    }
-    .dsk-sidebar-right::-webkit-scrollbar {
-        width: 10px;
-    }
-    /* Track */
-    .dsk-sidebar-right::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-    /* Handle */
-    .dsk-sidebar-right::-webkit-scrollbar-thumb {
-        background: #888;
-    }
-    /* Handle on hover */
-    .dsk-sidebar-right::-webkit-scrollbar-thumb:hover {
-        background: #555;
     }
     .top-logo-nav {
         margin-left: 1rem;
@@ -782,6 +811,76 @@ section {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .review-box {
+        width: 100%;
+        background-color: rgb(138, 34, 0);
+        border-radius: 1rem;
+        height: 9rem;
+        overflow-y: scroll;
+        border: .35rem solid rgb(138, 34, 0);
+    }
+    .review-box .review-single {
+        padding-left: 1rem;
+    }
+    .review-single p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .review-single p:nth-child(2) {
+        font-size: .75rem;
+    }
+    .review-box::-webkit-scrollbar {
+        display: none;
+    }
+    /* Track */
+    .review-box::-webkit-scrollbar-track {
+        display: none;
+    }
+    /* Handle */
+    .review-box::-webkit-scrollbar-thumb {
+        display: none;
+    }
+    /* Handle on hover */
+    .review-box::-webkit-scrollbar-thumb:hover {
+        display: none;
+    }
+    .review-single {
+        padding: .25rem .25rem;
+        margin: .5rem;
+        border-radius: .5rem;
+        background: #f4d58d;
+        color: #001427;
+    }
+    .popover {
+        border-radius: 50px;
+        background-color: #bf3100;
+    }
+    .popover-body {
+        margin-left: .3rem;
+        font-family: 'Mostica';
+        text-align: center;
+        color: #f4d58d !important;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::after {
+        right: 2px;
+        border-left-color: #bf3100;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::before {
+        right: 2px;
+        border-left-color: #bf3100;
+    }
+    /* .popover-header {
+        padding: .5rem 0.8rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        background-color: #bf3100;
+        color: #f4d58d;
+        border-bottom: 1px solid #ebebeb;
+        border-top-left-radius: calc(3rem + 1px);
+        border-top-right-radius: calc(3rem - 1px);
+    } */
     @supports ((position:-webkit-sticky) or (position:sticky)) {
         .dsk-sidebar {
             position: -webkit-sticky;
