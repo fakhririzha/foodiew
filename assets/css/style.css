@@ -410,7 +410,7 @@ section {
         position: absolute;
         /* left: 70vw; */
         right: 5vw;
-        top: -5vh;
+        top: -7vh;
         z-index: 995;
     }
     .randomizer a img {
@@ -630,7 +630,7 @@ section {
     .popover {
         border-radius: 5px;
         background-color: #bf3100;
-        top: -25px !important;
+        top: -35px !important;
         /* left: 120px !important; */
         z-index: 995;
     }
@@ -666,6 +666,12 @@ section {
     }
 }
 
+@media screeen and (min-width: 411px) and (max-width: 414px) {
+    #badge-label {
+        margin-top: 2rem !important;
+    }
+}
+
 @media screen and (min-width: 376px) and (max-width: 767px) {
     .mobile-only .dropdown-notif {
         margin-left: 3rem !important;
@@ -673,9 +679,6 @@ section {
     .kotak-bawah-tiga {
         margin-left: 1px;
         margin-right: 1px;
-    }
-    #badge-label {
-        margin-top: -0.35rem !important;
     }
 }
 
@@ -883,10 +886,10 @@ section {
         color: #001427;
     }
     .popover {
-        border-radius: 50px;
+        border-radius: 5px;
         background-color: #bf3100;
     }
-    .popover-body {
+    /* .popover-body {
         margin-left: .3rem;
         font-family: 'Mostica';
         text-align: center;
@@ -901,6 +904,31 @@ section {
     .bs-popover-left>.arrow::before {
         right: 2px;
         border-left-color: #bf3100;
+    }
+     */
+    .popover .arrow {
+        top: 15px !important;
+    }
+    .popover-body {
+        margin-left: .3rem;
+        font-family: 'Mostica';
+        text-align: center;
+        color: #f4d58d !important;
+        width: 7rem;
+        font-size: .65rem;
+        z-index: 995;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::after {
+        right: 2px;
+        border-left-color: #bf3100;
+        z-index: 995;
+    }
+    .bs-popover-auto[x-placement^=left]>.arrow::after,
+    .bs-popover-left>.arrow::before {
+        right: 2px;
+        border-left-color: #bf3100;
+        z-index: 995;
     }
     /* .popover-header {
         padding: .5rem 0.8rem;
