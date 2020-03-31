@@ -34,6 +34,10 @@ $(window).on('load', () => {
         $(window).click(function() {
             $('#randomizer2').popover('hide');
         })
+
+        $('#reviewSingle').on('click', () => {
+            $('#reviewMobile').modal('show');
+        })
     }
 });
 

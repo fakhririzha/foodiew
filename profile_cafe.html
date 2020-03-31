@@ -762,7 +762,7 @@
         <main class="page-content">
             <div id="overlay" class="overlay"></div>
 
-            <section id="information-panel">
+            <section id="information-panel" class="pb-0">
                 <div class="container">
                     <div class="row">
                         <div class="col-3 col-lg-2">
@@ -773,7 +773,7 @@
                                 <i class="far fa-square kotak-bawah-tiga"></i>
                             </div>
                         </div>
-                        <div class="col-9 col-lg-10 text-gold px-0 info-panel">
+                        <div class="col-5 col-lg-10 text-gold px-0 info-panel">
                             <span class="h5 d-block" style="font-size: 1rem">McDonald Ringroad</span>
                             <span class="h6" style="font-size: .75rem"><i class="fas fa-map-marker-alt"></i> Focal Point Medan</span>
                             <br>
@@ -785,7 +785,7 @@
                                 <i class="lnr lnr-star text-warning"></i> (73)
                             </p>
                             <!-- <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#reviewMobile"><i class="far fa-edit"></i> Write your review</button> -->
-                            <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#reviewMobile"><i class="fas fa-comments"></i> See Review</button>
+                            <!-- <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#reviewMobile"><i class="fas fa-comments"></i> See Review</button> -->
 
                             <!-- Modal -->
                             <div class="modal fade" id="reviewMobile" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="reviewMobileLabel" aria-hidden="true">
@@ -798,15 +798,8 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <!-- <form action="POST">
-                                                <div class="form-group text-navy-blue">
-                                                    <label for="exampleFormControlTextarea1">Add your review</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                                </div>
-                                            </form> -->
                                             <div class="mobile-review-section-header d-flex justify-content-between mb-2">
                                                 <p class="text-navy-blue mt-2"><small>(Scroll to see more)</small></p>
-                                                <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#writeReviewMobile"><i class="fas fa-edit"></i> Write your review!</button>
                                                 </button>
                                             </div>
                                             <div class="review-box">
@@ -862,7 +855,6 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button>
-                                            <!-- <button type="button" class="btn btn-review text-gold">Posting Review</button> -->
                                         </div>
                                     </div>
                                 </div>
@@ -893,11 +885,20 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-3 col-lg-2 text-gold">
-                            <div class="d-flex justify-content-center">
-                                <i class="far fa-2x fa-envelope"></i>
+                        <div class="col-4 col-lg-2 text-gold">
+                            <button type="button" class="btn btn-primary btn-review text-gold mt-1" data-toggle="modal" data-target="#writeReviewMobile"><i class="fas fa-edit"></i> Write a review!</button>
+                        </div>
+                    </div>
+                    <div class="row row-review">
+                        <div class="col-2 col-lg-2">&nbsp;</div>
+                        <div class="col-10 col-lg-10">
+                            <!-- <div class="review-box"> -->
+                            <div class="review-single" id="reviewSingle">
+                                <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
                             </div>
-                        </div> -->
+                            <!-- </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
