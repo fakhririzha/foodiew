@@ -632,15 +632,26 @@ section {
     color: white;
 }
 
+.card-cafe-sponsored a {
+    color: #f4d58d;
+}
+
+.card-cafe-sponsored a:hover,
+.card-cafe-sponsored a:active,
+.card-cafe-sponsored a:focus {
+    text-decoration: none;
+    color: #f4d58d;
+}
+
 .card-cafe-sponsored-center a {
-    color: white;
+    color: #f4d58d;
 }
 
 .card-cafe-sponsored-center a:hover,
 .card-cafe-sponsored-center a:active,
 .card-cafe-sponsored-center a:focus {
     text-decoration: none;
-    color: white;
+    color: #f4d58d;
 }
 
 .link-categories-gold {
