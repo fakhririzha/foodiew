@@ -45,6 +45,12 @@ $('button[data-target|="#writeReviewMobile"').on('click', () => {
     $('#reviewMobile').modal('hide');
 })
 
+$('button[data-target|="#writeReview"').on('click', () => {
+    $('#detailFood').modal('hide');
+    $('#detailDrink').modal('hide');
+
+})
+
 $('.carousel').carousel({
     interval: 3500
 })

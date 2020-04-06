@@ -706,6 +706,9 @@
                     <br>
                     <div class="row">
                         <div class="col">
+                            <button type="button" data-toggle="modal" data-target="#writeReview" class="btn btn-review text-gold">Write a Review!</button>
+                            <br>
+                            <br>
                             <div class="review-box">
                                 <div class="review-single">
                                     <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
@@ -761,6 +764,9 @@
                     <br>
                     <div class="row">
                         <div class="col">
+                            <button type="button" data-toggle="modal" data-target="#writeReview" class="btn btn-review text-gold">Write a Review!</button>
+                            <br>
+                            <br>
                             <div class="review-box">
                                 <div class="review-single">
                                     <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
@@ -782,6 +788,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL WRITE REVIEW FOOD / BEVERAGES -->
+<div class="modal fade" id="writeReview" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="writeReviewMobileLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-navy-blue" id="writeReviewMobileLabel">Nama Food / Beverages</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+            </div>
+            <div class="modal-body">
+                <form action="POST">
+                    <div class="form-group text-navy-blue">
+                        <label for="exampleFormControlTextarea1">Add your review</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-review text-gold">Submit Review</button>
             </div>
         </div>
     </div>

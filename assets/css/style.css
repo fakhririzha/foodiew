@@ -552,9 +552,48 @@ section {
 
 /* All-new desktop layout */
 
+#reviewMobile .modal-content {
+    background-color: #001427;
+    border: 1px solid #bf3100;
+}
+
+#reviewMobile .modal-title,
+#reviewMobile .modal-body p.text-navy-blue small,
+#reviewMobile .modal-header .close {
+    color: #f4d58d;
+    opacity: 1;
+    text-shadow: none;
+}
+
+#writeReviewMobile .modal-content {
+    background-color: #001427;
+    border: 1px solid #bf3100;
+}
+
+#writeReviewMobile .modal-title,
+#writeReviewMobile .modal-body label,
+#writeReviewMobile .modal-header .close {
+    color: #f4d58d;
+    opacity: 1;
+    text-shadow: none;
+}
+
+#writeReview .modal-content {
+    background-color: #001427;
+    border: 1px solid #bf3100;
+}
+
+#writeReview .modal-title,
+#writeReview .modal-body label,
+#writeReview .modal-header .close {
+    color: #f4d58d;
+    opacity: 1;
+    text-shadow: none;
+}
+
 .modal-register {
     background-color: #001427;
-    border: 2px solid #bf3100;
+    border: 1px solid #bf3100;
 }
 
 .modal-register .modal-title,
@@ -875,15 +914,21 @@ section {
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 375px) {
+@media screen and (min-width: 366px) and (max-width: 375px) {
     #badge-label {
         margin-top: 0.5rem !important;
+    }
+    #badge-label-profile {
+        margin-top: -0.5rem !important;
     }
 }
 
 @media screen and (min-width: 411px) and (max-width: 414px) {
     #badge-label {
         margin-top: 1rem !important;
+    }
+    #badge-label-profile {
+        margin-top: -0.25rem !important;
     }
     .randomizer {
         position: absolute;
@@ -912,12 +957,15 @@ section {
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 375px) {
+@media screen and (min-width: 360px) and (max-width: 365px) {
     .kotak-bawah-tiga {
         margin-left: 1px;
         margin-right: 1px;
     }
     #badge-label {
+        margin-top: -0.5rem !important;
+    }
+    #badge-label-profile {
         margin-top: -0.5rem !important;
     }
 }
@@ -1163,6 +1211,9 @@ section {
         right: 2px;
         border-left-color: #bf3100;
         z-index: 995;
+    }
+    header.desktop-only ul.navbar-nav li a:hover {
+        cursor: pointer;
     }
     /* .popover-header {
         padding: .5rem 0.8rem;
