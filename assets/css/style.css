@@ -578,6 +578,19 @@ section {
     text-shadow: none;
 }
 
+#writeReviewDesktop .modal-content {
+    background-color: #001427;
+    border: 1px solid #bf3100;
+}
+
+#writeReviewDesktop .modal-title,
+#writeReviewDesktop .modal-body label,
+#writeReviewDesktop .modal-header .close {
+    color: #f4d58d;
+    opacity: 1;
+    text-shadow: none;
+}
+
 #writeReview .modal-content {
     background-color: #001427;
     border: 1px solid #bf3100;
@@ -858,7 +871,7 @@ section {
     .btn-review:focus {
         font-size: .65rem;
     }
-    .review-box {
+    /* .review-box {
         width: 100%;
         background-color: rgb(138, 34, 0);
         border-radius: 1rem;
@@ -866,7 +879,7 @@ section {
         height: 9rem;
         overflow-y: scroll;
         border: .35rem solid rgb(138, 34, 0);
-    }
+    } */
     .row-review {
         position: relative;
         top: -1.5rem;
