@@ -99,7 +99,7 @@
                         </div>
                         <div class="user-info text-gold">
                             <span class="user-name"><strong>Adli</strong></span>
-                            <span class="user-role">Intermediate</span>
+                            <span class="user-role"><i class="fas fa-star"></i> Intermediate</span>
                             <span class="user-role">Reviewer</span>
                             <span class="user-status">
                                 <i class="fa fa-circle"></i>
@@ -132,20 +132,6 @@
                                     <i class="fas fa-user text-gold"></i>
                                     <span class="menu-text text-gold">Profile</span>
                                 </a>
-                                <!-- <div class="sidebar-submenu">
-                                    <ul>
-                                        <li>
-                                            <a href="./profile.html" class="text-gold">
-                                                <i class="fas fa-eye text-gold"></i> View Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="./message.html" class="text-gold">
-                                                <i class="fas fa-envelope text-gold"></i> Message
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div> -->
                             </li>
                             <li class="sidebar-dropdown">
                                 <a href="./promo.html">
@@ -165,39 +151,79 @@
                                     <span class="menu-text text-gold">Contact Us</span>
                                 </a>
                             </li>
+                            <li class="sidebar-dropdown">
+                                <a href="./contact-us.html">
+                                    <i class="fas fa-2x fa-shield-alt text-gold"></i>
+                                    <span class="menu-text text-gold">Privacy Policy</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="./contact-us.html">
+                                    <i class="fas fa-2x fa-book text-gold"></i>
+                                    <span class="menu-text text-gold">T & C</span>
+                                </a>
+                            </li>
+                            <li class="header-menu">
+                                <span class="text-gold">Follow Us!</span>
+                            </li>
+                            <div class="social-media">
+                                <a href="#" style="margin-left: 1.25rem;">
+                                    <i class="fab fa-2x fa-facebook-square text-gold"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-2x fa-instagram text-gold"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-2x fa-youtube-square text-gold"></i>
+                                </a>
+                            </div>
                         </ul>
                     </div>
                     <!-- sidebar-menu  -->
                 </div>
+                <!-- sidebar-footer  -->
+                <div class="sidebar-footer">
+                    <div>
+                        <a href="javascript:void(0)" class="text-gold">
+                            &copy;2020, Foodiew.
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <nav class="d-none d-xl-block col-xl-2 dsk-sidebar-right text-white">
-                <h5 class="text-gold">Sponsored</h5>
+            <nav class="d-none d-xl-block col-xl-2 dsk-sidebar-right text-white text-center">
+                <h6 class="text-gold">Sponsored</h6>
                 <div class="garis-promoted"></div>
                 <br>
                 <h6>Cafe</h6>
                 <div class="row">
-                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 pb-2 font-weight-bolder">Dopamine Cafe</p>
+                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                        <a href="./profile_cafe.html">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 pb-2 font-weight-bolder">Dopamine Cafe</p>
+                        </a>
                     </div>
                 </div>
                 <br>
                 <h6>Food</h6>
                 <div class="row">
-                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Food</p>
-                        <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                        <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Food</p>
+                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                        </a>
                     </div>
                 </div>
                 <br>
-                <h6>Drink</h6>
+                <h6>Beverages</h6>
                 <div class="row">
-                    <div class="col px-0 card-cafe-sponsored" style="font-size: .8rem">
-                        <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                        <p class="mx-2 mt-2 mb-0 font-weight-bolder">Drink</p>
-                        <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                    <div class="px-0 card-cafe-sponsored text-left" style="font-size: .8rem">
+                        <a href="#" role="button" data-toggle="modal" data-target="#detailDrink">
+                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Beverages</p>
+                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -238,56 +264,64 @@
                         </div>
                         <div class="row">
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                         </div>
                         <div class="row text-center">
@@ -298,56 +332,64 @@
                         </div>
                         <div class="row">
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                             <div class="col px-0 card-cafe" style="font-size: .8rem">
-                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                                <p class="rating mx-2 mb-0 white-text">
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                    <i class="lnr lnr-star text-warning"></i>
-                                </p>
-                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                    <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                    <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                    <p class="rating mx-2 mb-0 white-text">
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                        <i class="lnr lnr-star text-warning"></i>
+                                    </p>
+                                    <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                    <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                                </a>
                             </div>
                         </div>
                         <br>
@@ -380,20 +422,19 @@
                         <img class="img-responsive img-rounded" src="./assets/img/Profile_dummy.svg" alt="User picture">
                     </div>
                     <div class="user-info text-gold">
-                        <span class="user-name">Muhammad
-                            <strong>Adli</strong>
+                        <span class="user-name">Muhammad <strong>Adli</strong>
                         </span>
-                        <span class="user-role">Intermediate Reviewer</span>
+                        <span class="user-role"><i class="fas fa-star"></i> Intermediate Reviewer</span>
                         <span class="user-status">
                             <i class="fa fa-circle"></i>
                             <span>Online</span>
                         </span>
                         <span class="mt-2">
                             <a href="./profile.html" class="label-sidebar mr-1">
-                                <i class="fas fa-wrench text-navy-blue"></i>
+                                <i class="fas fa-cog text-navy-blue"></i>
                             </a>
                             <a href="./profile.html" class="label-sidebar">
-                                <i class="far fa-envelope text-navy-blue"></i>
+                                <i class="fas fa-envelope text-navy-blue"></i>
                             </a>
                         </span>
                     </div>
@@ -405,8 +446,8 @@
                             <input type="text" class="form-control search-menu text-gold" placeholder="Search...">
                             <div class="input-group-append">
                                 <span class="input-group-text text-gold">
-                                    <i class="fa fa-search text-gold" aria-hidden="true"></i>
-                                </span>
+                                <i class="fa fa-search text-gold" aria-hidden="true"></i>
+                            </span>
                             </div>
                         </div>
                     </div>
@@ -445,6 +486,18 @@
                             <a href="./contact-us.html">
                                 <i class="fas fa-2x fa-envelope text-gold"></i>
                                 <span class="menu-text text-gold">Contact Us</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./contact-us.html">
+                                <i class="fas fa-2x fa-shield-alt text-gold"></i>
+                                <span class="menu-text text-gold">Privacy Policy</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="./contact-us.html">
+                                <i class="fas fa-2x fa-book text-gold"></i>
+                                <span class="menu-text text-gold">T & C</span>
                             </a>
                         </li>
                     </ul>
@@ -544,43 +597,49 @@
                     </div>
                     <div class="row">
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -590,43 +649,49 @@
                     </div>
                     <div class="row">
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -636,43 +701,49 @@
                     </div>
                     <div class="row">
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                         <div class="col px-0 card-cafe" style="font-size: .8rem">
-                            <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
-                            <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
-                            <p class="rating mx-2 mb-0 white-text">
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                                <i class="lnr lnr-star text-warning"></i>
-                            </p>
-                            <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
-                            <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            <a href="#" role="button" data-toggle="modal" data-target="#detailFood">
+                                <img class="img-fluid" src="./assets/img/Header.jpg" alt="">
+                                <p class="mx-2 mt-2 mb-0 font-weight-bolder">Dopamine Cafe</p>
+                                <p class="rating mx-2 mb-0 white-text">
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                    <i class="lnr lnr-star text-warning"></i>
+                                </p>
+                                <p class="mx-2 mb-2 font-weight-bolder">(73)</p>
+                                <i class="mx-2 mb-2 fas fa-map-marker-alt"></i> KFC
+                            </a>
                         </div>
                     </div>
                     <br>
@@ -685,6 +756,147 @@
             </section>
 
         </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="detailFood" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-register">
+                <div class="modal-header">
+                    <h6 class="modal-title text-navy-blue" id="staticBackdropLabel">Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 px-0">
+                                <img src="./assets/img/logo-icon/noodles.svg" class="img-fluid img-thumbnail" style="width: 10rem; height: 10rem" alt="">
+                            </div>
+                            <div class="col-8 text-gold">
+                                <p>Noodles</p>
+                                <p><i class="fas fa-store"></i> KFC</p>
+                                <p><i class="fas fa-map-marked-alt"></i> Medan</p>
+                                <p>Categories : <a class="link-categories-gold" href="./noodles.html">Noodles</a></p>
+                                <p>Calories : 2000 calories</p>
+                            </div>
+                        </div>
+                        <h6 class="text-gold">Review <small>(scroll to see more)</small></h6>
+                        <div class="garis"></div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" data-toggle="modal" data-target="#writeReview" class="btn btn-review text-gold">Write a Review!</button>
+                                <br>
+                                <br>
+                                <div class="review-box review-box-mak-mik">
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="detailDrink" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-register">
+                <div class="modal-header">
+                    <h6 class="modal-title text-navy-blue" id="staticBackdropLabel">Details</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 px-0">
+                                <img src="./assets/img/logo-icon/hot_chocolatte.svg" class="img-fluid img-thumbnail" style="width: 10rem; height: 10rem" alt="">
+                            </div>
+                            <div class="col-8 text-gold">
+                                <p>Hot Chocolatte</p>
+                                <p><i class="fas fa-store"></i> KFC</p>
+                                <p><i class="fas fa-map-marked-alt"></i> Medan</p>
+                                <p>Categories : <a class="link-categories-gold" href="./hot_chocolatte.html">Hot Chocolatte</a></p>
+                                <p>Calories : 2000 calories</p>
+                            </div>
+                        </div>
+                        <h6 class="text-gold">Review <small>(scroll to see more)</small></h6>
+                        <div class="garis"></div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <button type="button" data-toggle="modal" data-target="#writeReview" class="btn btn-review text-gold">Write a Review!</button>
+                                <br>
+                                <br>
+                                <div class="review-box">
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                    <div class="review-single">
+                                        <p>Adli - <small><i class="fas fa-star"></i> Intermediate Reviewer</small></p>
+                                        <p><em>"Makanannya enak kali bah" ( <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i> )</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal write review -->
+    <div class="modal fade" id="writeReview" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="writeReviewMobileLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-navy-blue" id="writeReviewMobileLabel">Nama Food / Beverages</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form action="POST">
+                        <div class="form-group text-navy-blue">
+                            <label for="exampleFormControlTextarea1">Add your review</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary btn-close-review" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-review text-gold">Submit Review</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/jquery-3.4.1.min.js"></script>
