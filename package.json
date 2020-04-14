@@ -1,0 +1,28 @@
+{
+  "name": "foodiew",
+  "version": "1.0.0",
+  "description": "food and caffe review",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakhririzha/foodiew.git"
+  },
+  "keywords": [
+    "foodew"
+  ],
+  "author": "Moh. Abdul Haq Aulia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fakhririzha/foodiew/issues"
+  },
+  "homepage": "https://github.com/fakhririzha/foodiew#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
