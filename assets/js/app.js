@@ -68,7 +68,7 @@ const index = new Vue({
                 .catch((err) => {
                     this.isLoading = false
                     if (err.response !== undefined) {
-                        this.generalErrorMessage = err.response
+                        this.generalErrorMessage = err.response.data
                     } else {
                         this.generalErrorMessage = err
                     }
