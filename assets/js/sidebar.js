@@ -79,4 +79,24 @@ jQuery(function($) {
         $(".sidebar-content").addClass("desktop");
 
     }
+
+    // autohide whene navbar signin clicked
+    $('.signin').on('click', function(){
+        $(".page-wrapper").toggleClass("toggled");
+        $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index-1");
+        $(".bottom-nav").toggleClass("max-z-index-1");
+    });
+    $('.register').on('click', function(){
+        $(".page-wrapper").toggleClass("toggled");
+        $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index-1");
+        $(".bottom-nav").toggleClass("max-z-index-1");
+    });
+    $('.signout').on('click', function(){
+        $(".page-wrapper").toggleClass("toggled");
+        $(".sidebar-wrapper").toggleClass("max-z-index");
+        $(".navbar-dark").toggleClass("max-z-index-1");
+        $(".bottom-nav").toggleClass("max-z-index-1");
+    });
 });
