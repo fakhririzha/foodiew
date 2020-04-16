@@ -201,18 +201,22 @@
                                 <div class="text-center">
                                     <img src="./assets/img/Logo_Square.png" class="img-fluid" style="width: 10rem; height: 10rem" alt="">
                                 </div>
+
                                 <form class="form-signup" v-on:submit.prevent="register">
-                                    <div class="form-label-group">
+                                    <div :class="emailError ? 'form-label-group has-error' : 'form-label-group '">
                                         <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" v-model="email" required>
                                         <label for="inputEmail">E-mail</label>
+                                        <span v-if="emailError" class="help-block" style="color: #F4D58D">{{errorEmail}}</span>
                                     </div>
-                                    <div class="form-label-group">
+                                    <div :class="passwordError ? 'form-label-group has-error' : 'form-label-group '">
                                         <input type="password" id="inputPass" name="inputPass" class="form-control" placeholder="Password" v-model="password" required>
                                         <label for="inputPass">Password</label>
+                                        <span v-if="passwordError" class="help-block" style="color: #F4D58D">{{passwordError}}</span>
                                     </div>
-                                    <div class="form-label-group">
+                                    <div :class="confirmPasswordError ? 'form-label-group has-error' : 'form-label-group '">
                                         <input type="password" id="inputPassConf" name="inputPassConf" class="form-control" placeholder="Password" v-model="confirm_password" required>
                                         <label for="inputPassConf">Confirmation Password</label>
+                                        <span v-if="confirmPasswordError" class="help-block" style="color: #F4D58D">{{confirmPasswordError}}</span>
                                     </div>
                                     <button type="submit" class="btn btn-review text-gold">Register</button>
                                 </form>
@@ -843,19 +847,27 @@
                                 <img src="./assets/img/Logo_Square.png" class="img-fluid" style="width: 10rem; height: 10rem" alt="">
                             </div>
                             <form class="form-signup" v-on:submit.prevent="register">
-                                <div class="form-label-group">
+                                <div :class="emailError ? 'form-label-group has-error' : 'form-label-group '">
                                     <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" v-model="email" required>
                                     <label for="inputEmail">E-mail</label>
+                                    <span v-if="emailError" class="help-block" style="color: #F4D58D">{{errorEmail}}</span>
                                 </div>
-                                <div class="form-label-group">
+                                <div :class="passwordError ? 'form-label-group has-error' : 'form-label-group '">
                                     <input type="password" id="inputPass" name="inputPass" class="form-control" placeholder="Password" v-model="password" required>
                                     <label for="inputPass">Password</label>
+                                    <span v-if="passwordError" class="help-block" style="color: #F4D58D">{{passwordError}}</span>
                                 </div>
-                                <div class="form-label-group">
+                                <div :class="confirmPasswordError ? 'form-label-group has-error' : 'form-label-group '">
                                     <input type="password" id="inputPassConf" name="inputPassConf" class="form-control" placeholder="Password" v-model="confirm_password" required>
                                     <label for="inputPassConf">Confirmation Password</label>
+                                    <span v-if="confirmPasswordError" class="help-block" style="color: #F4D58D">{{confirmPasswordError}}</span>
                                 </div>
-                                <button type="submit" class="btn btn-review text-gold">Register</button>
+                                <button v-if="isLoading" type="submit" class="btn btn-review text-gold">
+                                    <div class="spinner-border spinner-border-sm text-light" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </button>
+                                <button v-else type="submit" class="btn btn-review text-gold">Register</button>
                             </form>
                         </div>
                     </div>
@@ -1297,6 +1309,23 @@
                         <button type="button" class="btn btn-review text-gold">Submit Review</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Modal for alert -->
+        <div id="generalModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Information</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>{{generalErrorMessage}}</p>
+                </div>
+              </div>
             </div>
         </div>
     </div>

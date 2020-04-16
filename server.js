@@ -1,7 +1,9 @@
+const dotenv = require('dotenv');
 const express = require('express')
 const app   = express()
 const http  = require('http').createServer(app)
-const port  = 3000
+
+dotenv.config();
 
 app.use('/assets', express.static('assets'))
 
@@ -9,6 +11,6 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
-http.listen(port, function() {
-    console.log('listening on *:' + port)
+http.listen(process.env.PORT, function() {
+    console.log('listening on *:' + process.env.PORT)
 })
