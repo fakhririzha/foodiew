@@ -1,7 +1,7 @@
 const index = new Vue({
     el: '#app',
     data: { 
-        url: 'http://localhost:8000',
+        url: 'https://tranquil-dawn-58446.herokuapp.com',
         title: 'foodiew',
         isLogin: 0,
         email: '',
