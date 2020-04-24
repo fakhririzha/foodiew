@@ -62,6 +62,9 @@
 
 <body>
     <div id="app">
+        <div id="random-animation">
+            <img src="./assets/img/Cafe_Randomizer.png" class="drop-shadow">
+        </div>
         <header class="navbar navbar-expand-lg navbar-dark navbar-dark-alt dsk-navbar sticky-top desktop-only">
 
             <a class="navbar-brand text-white font-weight-bolder" style="font-size: .9rem;" href="#">
@@ -105,13 +108,13 @@
                     <a class="dropdown-item" href="#"><i class="fas fa-user-plus"></i> Register</a>
                 </div>
             </div> -->
-    
+
         </header>
         <div class="container-fluid desktop-only">
             <div class="row flex-xl-nowrap default-theme border-radius-on">
                 <div class="col-md-3 col-xl-2 dsk-sidebar sidebar-wrapper">
                     <div class="sidebar-content">
-    
+
                         <!-- sidebar-menu  -->
                         <div class=" sidebar-item sidebar-menu">
                             <ul>
@@ -187,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" ref="registerModal">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -268,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <nav class="d-none d-xl-block col-xl-2 dsk-sidebar-right text-white text-center">
                     <h6 class="text-gold">Sponsored</h6>
                     <div class="garis-promoted"></div>
@@ -305,9 +308,9 @@
                         </div>
                     </div>
                 </nav>
-    
+
                 <main class="col-md-9 col-xl-8 py-md-3 pl-md-3 dsk-content">
-    
+
                     <section id="header" class="pb-0">
                         <div class="container">
                             <div class="row">
@@ -318,9 +321,9 @@
                             <br>
                         </div>
                     </section>
-    
+
                     <div class="main-content">
-    
+
                         <section id="weekly-trend-cafe">
                             <div class="container">
                                 <div class="row">
@@ -767,9 +770,9 @@
                                 </div>
                             </div>
                         </section>
-    
+
                     </div>
-    
+
                 </main>
             </div>
         </div>
@@ -880,7 +883,7 @@
                     </div>
                 </div>
             </nav>
-    
+
             <!-- Modal -->
             <div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" ref="registerModal">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -960,9 +963,9 @@
                     </div>
                 </div>
             </div>
-    
+
             <nav class="navbar navbar-expand-lg navbar-dark navbar-dark-alt sticky-top mobile-only">
-    
+
                 <a id="toggle-sidebar" class="navbar-brand text-white mr-auto font-weight-bolder" style="font-size: .9rem;" href="#">
                     <i class="fas fa-bars"></i>
                 </a>
@@ -971,7 +974,7 @@
                     <img src="./assets/img/Profile_dummy.svg" alt="" class="img-thumbnail img-circle">
                 </a>
             </nav>
-    
+
             <nav class="navbar navbar-expand-md navbar-light fixed-bottom bottom-nav">
                 <div class="container">
                     <div class="row text-center" style="margin-left: 11vw;">
@@ -1006,18 +1009,18 @@
                     </div>
                 </div>
             </nav>
-    
+
             <div class="mobile-only">
                 <main class="page-content" style="padding-bottom: 3.75rem;">
-    
+
                     <div id="overlay" class="overlay"></div>
-    
+
                     <!-- <div class="randomizer text-center">
                         <a href="./profile_cafe.html" style="font-size: .75rem;">
                             <img src="./assets/img/Cafe_Randomizer.png" class="drop-shadow">
                         </a>
                     </div> -->
-    
+
                     <section id="header" class="pb-0">
                         <div class="container">
                             <div class="row">
@@ -1028,9 +1031,9 @@
                             <br>
                         </div>
                     </section>
-    
+
                     <div class="main-content">
-    
+
                         <section id="weekly-trend-cafe" class="pt-0">
                             <div class="container">
                                 <div class="row">
@@ -1251,13 +1254,13 @@
                                 </div>
                             </div>
                         </section>
-    
+
                     </div>
-    
+
                 </main>
             </div>
         </div>
-    
+
         <!-- Modal -->
         <div class="modal fade" id="detailFood" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1372,7 +1375,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Modal write review -->
         <div class="modal fade" id="writeReview" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="writeReviewMobileLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -1402,17 +1405,17 @@
         <!-- Modal for alert -->
         <div id="generalModal" class="modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Information</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>{{generalErrorMessage}}</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <p>{{generalErrorMessage}}</p>
-                </div>
-              </div>
             </div>
         </div>
     </div>

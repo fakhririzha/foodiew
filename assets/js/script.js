@@ -27,8 +27,23 @@ $(window).on('load', () => {
         });
         $('#randomizer').popover('show');
         $(window).click(function() {
-            $('#randomizer').popover('hide');
+                $('#randomizer').popover('hide');
+            })
+            // $('#randomizer').on('click', (event) => {
+            //     event.preventDefault();
+            //     $('.random-animation').addClass('show');
+            // }).setTimeout(() => {
+            //     window.location = "/profile_cafe.html";
+            // }, 2500);
+
+        document.getElementById('randomizer').addEventListener('click', (event) => {
+            event.preventDefault();
+            document.getElementById('random-animation').classList.add('show');
         })
+
+        setTimeout(() => {
+            window.location = "profile_cafe.html";
+        }, 2500);
     } else {
         $('#randomizer2').popover({
             trigger: 'manual'
