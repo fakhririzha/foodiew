@@ -39,11 +39,11 @@ $(window).on('load', () => {
         document.getElementById('randomizer').addEventListener('click', (event) => {
             event.preventDefault();
             document.getElementById('random-animation').classList.add('show');
-        })
 
-        setTimeout(() => {
-            window.location = "profile_cafe.html";
-        }, 2500);
+            setTimeout(() => {
+                window.location = "profile_cafe.html";
+            }, 2500);
+        })
     } else {
         $('#randomizer2').popover({
             trigger: 'manual'
