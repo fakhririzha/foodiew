@@ -1,6 +1,6 @@
 const index = new Vue({
     el: '#app',
-    data: { 
+    data: {
         url: 'https://tranquil-dawn-58446.herokuapp.com',
         title: 'foodiew',
         isLogin: 0,
@@ -14,7 +14,7 @@ const index = new Vue({
         isLoading: false,
         generalErrorMessage: ''
     },
-    created () {
+    created() {
         let token = localStorage.getItem('token')
         if (token !== null) {
             this.isLogin = 1
@@ -22,7 +22,7 @@ const index = new Vue({
         }
     },
     methods: {
-        register: function () {
+        register: function() {
             this.isLoading = true
             if (this.password !== this.confirm_password) {
                 this.passwordError = 'Your password not match with Confirmation Password'
@@ -38,7 +38,7 @@ const index = new Vue({
             // $('#staticBackdrop').modal('hide')
             // $('#staticBackdrop2').modal('hide')
             let url = this.url + '/api/registration'
-            // let token = localStorage.getItem('token')
+                // let token = localStorage.getItem('token')
             let header = {
                 // headers: {
                 //     'Authorization': `${token}`,
@@ -78,9 +78,9 @@ const index = new Vue({
                     }, 3000);
                 })
         },
-        signin: function () {
+        signin: function() {
             this.isLoading = true
-            
+
             if (this.email === '') {
                 this.email = 'Your password not match with Confirmation Password'
                 setTimeout(() => {
@@ -102,7 +102,7 @@ const index = new Vue({
             // $('#staticBackdrop').modal('hide')
             // $('#staticBackdrop2').modal('hide')
             let url = this.url + '/api/login'
-            // let token = localStorage.getItem('token')
+                // let token = localStorage.getItem('token')
             let header = {
                 // headers: {
                 //     'Authorization': `${token}`,
@@ -146,15 +146,15 @@ const index = new Vue({
                     }, 3000);
                 })
         },
-        signout: function () {
+        signout: function() {
             localStorage.removeItem('token')
             localStorage.removeItem('userProfile')
             this.isLogin = 0
         },
-        getProfile: function () {
+        getProfile: function() {
 
         },
-        getListItems: function () {
+        getListItems: function() {
             // let url = 'https://api.foodiew.com/getlist'
             // axios.get(url)
             //     .then((res) => {
