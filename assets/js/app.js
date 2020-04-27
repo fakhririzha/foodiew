@@ -74,9 +74,11 @@ const index = new Vue({
                     } else {
                         this.generalErrorMessage = err
                     }
-                    $('#generalModal').modal('show')
+                    // $('#generalModal').modal('show')
+                    $('#toastRegister').toast('show')
                     setTimeout(() => {
-                        $('#generalModal').modal('hide')
+                        // $('#generalModal').modal('hide')
+                        $('#toastRegister').toast('show')
                     }, 3000);
                 })
         },
@@ -144,9 +146,11 @@ const index = new Vue({
                     } else {
                         this.generalErrorMessage = err
                     }
-                    $('#generalModal').modal('show')
+                    // $('#generalModal').modal('show')
+                    $('#toastLogin').toast('show')
                     setTimeout(() => {
-                        $('#generalModal').modal('hide')
+                        // $('#generalModal').modal('hide')
+                        $('#toastLogin').toast('hide')
                     }, 3000);
                 })
         },
