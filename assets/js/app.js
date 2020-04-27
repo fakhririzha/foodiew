@@ -63,6 +63,8 @@ const index = new Vue({
                             $('#staticBackdrop').modal('hide')
                             $('#staticBackdrop2').modal('hide')
                         }, 5000);
+                    } else {
+                        $('.toast').toast('show')
                     }
                 })
                 .catch((err) => {
