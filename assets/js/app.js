@@ -64,7 +64,7 @@ const index = new Vue({
                             $('#staticBackdrop2').modal('hide')
                         }, 5000);
                     } else {
-                        $('.toast').toast('show')
+                        $('#toastRegister').toast('show')
                     }
                 })
                 .catch((err) => {
@@ -133,6 +133,8 @@ const index = new Vue({
 
                         // get profile user
                         this.getProfile()
+                    } else {
+                        $('#toastLogin').toast('show')
                     }
                 })
                 .catch((err) => {
