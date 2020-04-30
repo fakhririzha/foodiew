@@ -10,7 +10,7 @@ $(window).on("scroll", function() {
 
 
 $(window).keydown((event) => {
-    if (event.keyCode = 27) {
+    if (event.keyCode === 27) {
         $('#writeReview').modal('hide');
         $('#writeReviewMobile').modal('hide');
         $('#reviewMobile').modal('hide');
@@ -72,3 +72,10 @@ $('button[data-target|="#writeReview"').on('click', () => {
 $('.carousel').carousel({
     interval: 3500
 })
+
+$(".ratings").rating({
+    "click": function(e) {
+        // OUTPUT Nilai ratingnya
+        console.log(e.stars);
+    }
+});
