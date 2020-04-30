@@ -29,6 +29,7 @@
     <link href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="assets/css/sidebar.css" rel="stylesheet" />
     <link href="assets/css/sidebar-themes.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/rating.css" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/arrow.css" rel="stylesheet" />
 
@@ -295,16 +296,19 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <form action="POST">
+
                                                         <div class="form-group text-navy-blue">
                                                             <label for="exampleFormControlTextarea1">Ratings</label>
-                                                            <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
-                                                                    <option selected>Select your rating</option>
-                                                                    <option value="1" style="font-family: 'Font Awesome 5 Free'">&#xf005;</option>
-                                                                    <option value="2" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;</option>
-                                                                    <option value="3" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;</option>
-                                                                    <option value="4" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;</option>
-                                                                    <option value="5" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;&#xf005;</option>
-                                                                </select>
+                                                            <!-- <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
+                                                                <option selected>Select your rating</option>
+                                                                <option value="1" style="font-family: 'Font Awesome 5 Free'">&#xf005;</option>
+                                                                <option value="2" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;</option>
+                                                                <option value="3" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;</option>
+                                                                <option value="4" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;</option>
+                                                                <option value="5" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;&#xf005;</option>
+                                                            </select> -->
+                                                            <div class="ratings" style="font-size: 1rem;"></div>
+                                                            <!-- <input type="text" readonly id="basicInput" class="form-control form-control-sm"> -->
                                                         </div>
                                                         <div class="form-group text-navy-blue">
                                                             <label for="exampleFormControlTextarea1">Add your review</label>
@@ -936,14 +940,15 @@
                                             <form action="POST">
                                                 <div class="form-group text-navy-blue">
                                                     <label for="exampleFormControlTextarea1">Ratings</label>
-                                                    <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
+                                                    <!-- <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
                                                             <option selected>Select your rating</option>
                                                             <option value="1" style="font-family: 'Font Awesome 5 Free'">&#xf005;</option>
                                                             <option value="2" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;</option>
                                                             <option value="3" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;</option>
                                                             <option value="4" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;</option>
                                                             <option value="5" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;&#xf005;</option>
-                                                        </select>
+                                                        </select> -->
+                                                    <div class="ratings" style="font-size: 1rem;"></div>
                                                 </div>
                                                 <div class="form-group text-navy-blue">
                                                     <label for="exampleFormControlTextarea1">Add your review</label>
@@ -1351,14 +1356,15 @@
                     <form action="POST">
                         <div class="form-group text-navy-blue">
                             <label for="exampleFormControlTextarea1">Ratings</label>
-                            <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
-                                    <option selected>Select your rating</option>
-                                    <option value="1" style="font-family: 'Font Awesome 5 Free'">&#xf005;</option>
-                                    <option value="2" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;</option>
-                                    <option value="3" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;</option>
-                                    <option value="4" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;</option>
-                                    <option value="5" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;&#xf005;</option>
-                                </select>
+                            <!-- <select class="custom-select" name="selectRating" style="font-family: 'Font Awesome 5 Free'">
+                                <option selected>Select your rating</option>
+                                <option value="1" style="font-family: 'Font Awesome 5 Free'">&#xf005;</option>
+                                <option value="2" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;</option>
+                                <option value="3" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;</option>
+                                <option value="4" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;</option>
+                                <option value="5" style="font-family: 'Font Awesome 5 Free'">&#xf005;&#xf005;&#xf005;&#xf005;&#xf005;</option>
+                            </select> -->
+                            <div class="ratings" style="font-size: 1rem;"></div>
                         </div>
                         <div class="form-group text-navy-blue">
                             <label for="exampleFormControlTextarea1">Add your review</label>
@@ -1379,6 +1385,7 @@
     <script src="assets/js/SmoothScroll.min.js"></script>
     <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/rating.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- <script src="assets/js/custom_underline.js"></script> -->
 </body>
